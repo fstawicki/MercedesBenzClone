@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Navbar.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+import {faMagnifyingGlass,faInfoCircle} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 
@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="navbar__right">
             <div className="navbar__right__upper">
                 <ul className='navbar__right__upper__list'>
-                    <li><a href="#">Provider/Privacy Statement</a></li>
+                    <li><a href="#"><FontAwesomeIcon icon={faInfoCircle}/> Provider/Privacy Statement</a></li>
                     <li><a href="#" onClick={changeLanguage}>{language}</a></li>
                 </ul>
             </div>

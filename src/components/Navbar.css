@@ -1,10 +1,9 @@
 nav{
-    
+    padding: 0.5rem 0;
     background-color: black;
 }
 .navbar{
-    
-    color: azure;
+    color: white;
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -14,7 +13,7 @@ nav{
 
 a{
     text-decoration: none;
-    color: azure;
+    color: white;
 }
 
 
@@ -23,20 +22,22 @@ a{
 }
 
 .navbar__left__logo{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-image: url('../images/mercedes-benz-logo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .navbar__left__logoname{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 20px;
     background-image: url('../images/napis.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: auto 0 1rem 1rem;
+
 }
 
 .navbar__right{
@@ -64,6 +65,7 @@ a{
 .navbar__right__upper__list li a,
 .navbar__left__upper__list li a{
     letter-spacing: 0.3px;
+
 }
 
 .navbar__right__upper__list li a:hover,
