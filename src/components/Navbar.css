@@ -1,0 +1,72 @@
+nav{
+    
+    background-color: black;
+}
+.navbar{
+    
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+
+.navbar__left{
+    display: flex;
+}
+
+.navbar__left__logo{
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/mercedes-benz-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.navbar__left__logoname{
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/napis.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navbar__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navbar__right__upper{
+    display: flex;
+    justify-content: end;
+}
+
+.navbar__right__upper__list,
+.navbar__left__upper__list{
+    list-style: none;
+    display: flex;
+}
+
+.navbar__right__upper__list li,
+.navbar__left__upper__list li{
+    margin-right: 2rem;
+}
+
+.navbar__right__upper__list li a,
+.navbar__left__upper__list li a{
+    letter-spacing: 0.3px;
+}
+
+.navbar__right__upper__list li a:hover,
+.navbar__left__upper__list li a:hover{
+    color: #00adef;
+}
