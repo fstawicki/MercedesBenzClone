@@ -16,7 +16,6 @@ const Navbar = () => {
             setLanguage('Deutsch');
         }
     }
-
   return (
     <nav>
         <div className="navbar">
