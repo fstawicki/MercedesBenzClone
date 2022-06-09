@@ -1,6 +1,7 @@
 nav{
     padding: 0.5rem 0;
     background-color: black;
+
 }
 .navbar{
     color: white;
@@ -52,23 +53,35 @@ a{
 }
 
 .navbar__right__upper__list,
-.navbar__left__upper__list{
+.navbar__right__lower__list{
     list-style: none;
     display: flex;
+    justify-content: end;
 }
 
 .navbar__right__upper__list li,
-.navbar__left__upper__list li{
+.navbar__right__lower__list li{
     margin-right: 2rem;
 }
 
 .navbar__right__upper__list li a,
-.navbar__left__upper__list li a{
+.navbar__right__lower__list li a{
     letter-spacing: 0.3px;
 
 }
 
 .navbar__right__upper__list li a:hover,
-.navbar__left__upper__list li a:hover{
+.navbar__right__lower__list li a:hover{
     color: #00adef;
+}
+
+
+@media (max-width: 1280px){
+    .big-screen a{
+       display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    
 }

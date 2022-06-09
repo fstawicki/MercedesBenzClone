@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Navbar.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMagnifyingGlass,faInfoCircle} from "@fortawesome/free-solid-svg-icons";
+import {faMagnifyingGlass,faInfoCircle, faBars} from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 
@@ -32,15 +32,16 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar__right__lower">
-                <ul className='navbar__left__upper__list'>
-                    <li><a href="#">Vehicles</a></li>
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Innovation</a></li>
-                    <li><a href="#">Museum & History</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Lifestyle</a></li>
-                    <li><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a></li>
+                <ul className='navbar__right__lower__list'>
+                    <li className='big-screen'><a href="#">Vehicles</a></li>
+                    <li className='big-screen'><a href="#">Design</a></li>
+                    <li className='big-screen'><a href="#">Innovation</a></li>
+                    <li className='big-screen'><a href="#">Museum & History</a></li>
+                    <li className='big-screen'><a href="#">Sports</a></li>
+                    <li className='big-screen'><a href="#">Events</a></li>
+                    <li className='big-screen'><a href="#">Lifestyle</a></li>
+                    <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a></li>
+                    <li className='no-margin'><a href="#"><FontAwesomeIcon icon={faBars} /></a></li>
                 </ul>
             </div>
         </div>
