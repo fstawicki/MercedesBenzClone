@@ -1,7 +1,7 @@
 nav{
-    padding: 0.5rem 0;
+    padding: 0.1rem;
     background-color: black;
-
+    height: 11vh;
 }
 .navbar{
     color: white;
@@ -9,6 +9,7 @@ nav{
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
+    height: 11vh;
     
 }
 
@@ -24,7 +25,7 @@ a{
 
 .navbar__left__logo{
     width: 90px;
-    height: 90px;
+    height: 11vh;
     background-image: url('../images/mercedes-benz-logo.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -38,6 +39,7 @@ a{
     background-repeat: no-repeat;
     background-size: contain;
     margin: auto 0 1rem 1rem;
+
 
 }
 
@@ -82,6 +84,30 @@ a{
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1023px){
+
+    .big-screen{
+        display: none;
+    }
+
+    .navbar__left{
+        display: flex;
+    }
+
+    .navbar__right__upper__list li,
+.navbar__right__lower__list li{
+    margin-right: 1rem;
+}
     
+    .navbar__left__logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar__left__logoname{
+        width: 100px;
+        height: 20px;
+        margin: auto 0 0.5rem 1rem;
+    }
+
 }

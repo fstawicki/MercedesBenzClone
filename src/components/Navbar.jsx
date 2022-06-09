@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="navbar__right">
             <div className="navbar__right__upper">
                 <ul className='navbar__right__upper__list'>
-                    <li><a href="#"><FontAwesomeIcon icon={faInfoCircle}/> Provider/Privacy Statement</a></li>
+                    <li><a href="#"><FontAwesomeIcon icon={faInfoCircle}/> <span className='big-screen'>Provider/Privacy Statement</span></a></li>
                     <li><a href="#" onClick={changeLanguage}>{language}</a></li>
                 </ul>
             </div>
