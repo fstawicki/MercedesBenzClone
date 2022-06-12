@@ -19,10 +19,14 @@ const Navbar = () => {
   return (
     <nav>
         <div className="navbar">
-        <div className="navbar__left">
-            <div className="navbar__left__logo"></div>
-            <div className="navbar__left__logoname"></div>
-        </div>
+        <a className="navbar__left">
+            <div className="navbar__left__logo">
+                <img className="navbar__left__logoIMG" src={require("../images/logo1cropped-removebg-preview.png")} width="50px" height="50px" alt="dd" />
+            </div>
+            <div className="navbar__left__logoname">
+                <img className="navbar__left__logonameIMG" src={require("../images/napis.png")} width="50px" height="50px" alt="s" />
+            </div>
+        </a>
         <div className="navbar__right">
             <div className="navbar__right__upper">
                 <ul className='navbar__right__upper__list'>
