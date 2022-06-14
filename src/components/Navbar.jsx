@@ -17,7 +17,7 @@ const Navbar = () => {
         }
     }
   return (
-    <nav>
+    <nav className='nav'>
         <div className="navbar">
         <a href='#' className="navbar__left">
             <div className="navbar__left__logo">
@@ -43,8 +43,8 @@ const Navbar = () => {
                     <li className='big-screen'><a href="#">Sports</a></li>
                     <li className='big-screen'><a href="#">Events</a></li>
                     <li className='big-screen'><a href="#">Lifestyle</a></li>
-                    <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a></li>
-                    <li className='media'><a href="#"><FontAwesomeIcon icon={faBars} /></a></li>
+                    <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/></a></li>
+                    <li className='media'><a href="#"><FontAwesomeIcon icon={faBars}/></a></li>
                 </ul>
             </div>
         </div>
