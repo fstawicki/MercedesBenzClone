@@ -19,12 +19,12 @@ const Navbar = () => {
   return (
     <nav>
         <div className="navbar">
-        <a className="navbar__left">
+        <a href='#' className="navbar__left">
             <div className="navbar__left__logo">
-                <img className="navbar__left__logoIMG" src={require("../images/logo1cropped-removebg-preview.png")} width="50px" height="50px" alt="dd" />
+                <img className="navbar__left__logoIMG" src={require("../images/logo1cropped-removebg-preview.png")} alt="dd" />
             </div>
             <div className="navbar__left__logoname">
-                <img className="navbar__left__logonameIMG" src={require("../images/napis.png")} width="50px" height="50px" alt="s" />
+                <img className="navbar__left__logonameIMG" src={require("../images/napis.png")}  alt="s" />
             </div>
         </a>
         <div className="navbar__right">
@@ -44,7 +44,7 @@ const Navbar = () => {
                     <li className='big-screen'><a href="#">Events</a></li>
                     <li className='big-screen'><a href="#">Lifestyle</a></li>
                     <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a></li>
-                    <li className='no-margin'><a href="#"><FontAwesomeIcon icon={faBars} /></a></li>
+                    <li className='media'><a href="#"><FontAwesomeIcon icon={faBars} /></a></li>
                 </ul>
             </div>
         </div>
