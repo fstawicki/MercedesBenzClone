@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './HeroPage.css';
+import Navbar from './Navbar';
 
 const HeroPage = () => {
   return (
-    <div className='banner'>HeroPage</div>
+    <Fragment>
+      <Navbar />
+      <div className='banner'>HeroPage</div>
+    </Fragment>
   )
 }
 
