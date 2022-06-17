@@ -1,10 +1,10 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './Navbar.css';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMagnifyingGlass,faInfoCircle, faBars} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass, faInfoCircle, faBars } from "@fortawesome/free-solid-svg-icons";
+
 
 const Navbar = () => {
-
 
     const [language, setLanguage] = useState('Deutsch');
 
@@ -16,6 +16,8 @@ const Navbar = () => {
             setLanguage('Deutsch');
         }
     }
+
+
   return (
     <nav className='nav'>
         <div className="navbar">
@@ -41,8 +43,8 @@ const Navbar = () => {
                     <li className='big-screen'><a href="#">Innovation</a></li>
                     <li className='big-screen'><a href="#">Museum & History</a></li>
                     <li className='big-screen'><a href="#">Sports</a></li>
-                    <li className='big-screen'><a href="#">Events</a></li>
-                    <li className='big-screen'><a href="#">Lifestyle</a></li>
+                    <li className='big-screen'><a href="#">Events</a></li>             
+                    <li className='big-screen'><a href="#">Lifestyle</a></li>             
                     <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/></a></li>
                     <li className='media'><a href="#"><FontAwesomeIcon icon={faBars}/></a></li>
                 </ul>

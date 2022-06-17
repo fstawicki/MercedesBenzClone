@@ -1,9 +1,6 @@
 .banner{
-    height: 120vh;
+    /* height: 120vh; */
+    height: 300vh;
     background-color: aqua;
 }
 
-.navbar__right__upper__list li a:hover,
-.navbar__right__lower__list li a:hover{
-    color: blue;
-}

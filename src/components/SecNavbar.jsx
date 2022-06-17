@@ -2,7 +2,7 @@ import React from 'react'
 
 const SecNavbar = () => {
   return (
-    <div className='sec'>SecNavbar</div>
+    <div name="sec" className='sec'>SecNavbar</div>
   )
 }
 

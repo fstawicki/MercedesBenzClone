@@ -5,7 +5,6 @@ import Navbar from './Navbar';
 const HeroPage = () => {
   return (
     <Fragment>
-      <Navbar />
       <div className='banner'>HeroPage</div>
     </Fragment>
   )
