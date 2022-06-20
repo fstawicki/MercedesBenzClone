@@ -7,4 +7,12 @@
 html{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+@font-face {
+  font-family: "MBCorpoATitle";
+  src: local("MBCorpoATitle"),
+   url("./fonts/mbcorpoatitle-regular.otf") format("opentype");
+  font-weight: regular;
 }

@@ -1,6 +1,20 @@
-.banner{
-    /* height: 120vh; */
-    height: 300vh;
-    background-color: aqua;
+.HeroPage{
+    padding: 0 5rem;
+    height: 88%;
+    background-image: url('../images/mercedesphotos/1nice-3400x1480.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.HeroPage h1,h2{
+    font-family: 'MBCorpoATitle';
+    font-weight: 100;
+}
+
+.HeroPage h1{
+    font-size: 60px;
+}
+.HeroPage h2{
+    font-size: 50px;
+}
