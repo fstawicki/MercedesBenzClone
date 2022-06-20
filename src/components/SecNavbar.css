@@ -1,20 +1,47 @@
 .SecNavbar{
     
-    height: 10%;
+    height: 12%;
+    
+    width: 100%;
     display: flex;
-}
-
-
-.SecNavbar__ul{
-    text-decoration: none;
-    list-style: none;
     margin: 0 auto;
 
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.74) 100%);
+  
+}
+
+.SecNavbar__container{
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 2.5rem;
+}
+
+.SecNavbar__container__ul{
+    text-decoration: none;
+    list-style: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.479);
+
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
 }
 
-.SecNavbar__ul li,
-.SecNavbar__ul li a{
-    padding: 1rem;
+.SecNavbar__container__ul li{
+    
 }
 
+.SecNavbar__container__ul li a{
+    text-decoration: none;
+    color: hsla(0,0%,100%,.5);
+    display: block;
+    padding: 2rem 1.5rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.SecNavbar__container__ul li a:hover{
+    color: white;
+}

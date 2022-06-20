@@ -14,7 +14,10 @@ function App() {
           <SecNavbar />
         </HeroPage>
       </Container>
+      <HeroPage />
+      
     </div>
+    
   );
 }
 
