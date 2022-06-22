@@ -13,7 +13,7 @@ function App() {
           <HeroPage/>
           <SecNavbar />
         </Wrapper>
-  
+
       <Container />
     </div>
     
