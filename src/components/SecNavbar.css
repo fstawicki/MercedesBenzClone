@@ -47,3 +47,28 @@
 .SecNavbar__container__ul li a:hover{
     color: white;
 }
+
+
+
+
+
+
+/* oryginally 1280px */
+@media (max-width: 1350px){
+    
+
+}
+
+
+@media (max-width: 1080px){
+    
+    .SecNavbar__container{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    
+}
