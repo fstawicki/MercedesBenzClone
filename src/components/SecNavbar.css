@@ -1,18 +1,21 @@
 .SecNavbar{
     
-    height: 12%;
+    height: 11vh;
     
     width: 100%;
     display: flex;
     margin: 0 auto;
 
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.74) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.863) 100%);
   
 }
 
 .SecNavbar__container{
     margin: 0 auto;
-    width: 80%;
+    /* 
+    WAŻNE
+    */
+    width: 90%;
     padding: 0 2.5rem;
 }
 
@@ -35,7 +38,6 @@
 .SecNavbar__container__ul li a{
     text-decoration: none;
     color: hsla(0,0%,100%,.5);
-    display: block;
     padding: 2rem 1.5rem;
     transition: 0.3s ease;
     cursor: pointer;

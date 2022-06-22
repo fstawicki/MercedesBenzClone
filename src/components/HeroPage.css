@@ -1,22 +1,19 @@
 .HeroPage{
     
-    height: 88%;
+    height: 77vh;
     width: 100%;
-    background-image: url('../images/mercedesphotos/1nice-3400x1480.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    
 }
-
 
 
 .HeroPage__overlay{
     margin: 0 auto;
+    /* 
+    WAŻNE
+    */
     padding: 2.5rem 2.5rem 0 2.5rem;
-    width: 80%;
-    height: 88%;
+    width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,6 +22,7 @@
 }
 
 .HeroPage__overlay__upperText{
+    width: 25%;
     
 }
 
@@ -59,4 +57,10 @@
 }
 .HeroPage h2{
     font-size: 50px;
+}
+
+
+@media (max-width: 1000px){
+
+   
 }

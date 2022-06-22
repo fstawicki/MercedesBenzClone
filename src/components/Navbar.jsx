@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="navbar">
         <a href='#' className="navbar__left">
             <div className="navbar__left__logo">
-                <img className="navbar__left__logoIMG" src={require("../images/logo1cropped-removebg-preview.png")} alt="dd" />
+                <img className="navbar__left__logoIMG" src={require("../images/mercedesphotos/logo.png")} alt="mercedes_logo" />
             </div>
             <div className="navbar__left__logoname">
                 <img className="navbar__left__logonameIMG" src={require("../images/napis.png")}  alt="s" />
