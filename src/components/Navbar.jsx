@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import './Navbar.css';
+import './NavbarSmallMenu.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faInfoCircle, faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -61,16 +62,16 @@ const Navbar = () => {
         </div>
     </nav>
     {isMenu && (
-            <div className="smallMenu">
-                <ul className="smallMenu__ul">
-                    <li className="smallMenu__ul__li"><a href="#">Vehicles</a></li>
-                    <li className="smallMenu__ul__li"><a href="#">Design</a></li>
-                    <li className="smallMenu__ul__li"><a href="#">Innovation</a></li>
-                    <li className="smallMenu__ul__li"><a href="#">Museum & History</a></li>
-                    <li className="smallMenu__ul__li"><a href="#">Sports</a></li>
-                    <li className="smallMenu__ul__li"><a href="#">Events</a></li>
-                    <li className="smallMenu__ul__li"><a href="#">Lifestyle</a></li>
-                    <li className="smallMenu__ul__li"><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/> Search</a></li>
+            <div className="navbar__smallMenu">
+                <ul className="navbar__smallMenu__ul">
+                    <li className="navbar__smallMenu__ul__li"><a href="#">Vehicles</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="#">Design</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="#">Innovation</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="#">Museum & History</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="#">Sports</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="#">Events</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="#">Lifestyle</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/> Search</a></li>
                 </ul>
             </div>
         )

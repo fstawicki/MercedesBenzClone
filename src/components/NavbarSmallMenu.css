@@ -1,0 +1,38 @@
+.navbar__smallMenu{
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-color: black;
+}
+
+
+.navbar__smallMenu__ul{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__smallMenu__ul__li{
+    margin-top: 2rem;
+}
+
+.navbar__smallMenu__ul__li a{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    
+
+    color: white;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+
+.navbar__smallMenu__ul__li a:hover{
+    color: #00adef;
+}

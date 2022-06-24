@@ -89,7 +89,7 @@
     color: white;
     margin: 0 1.1rem;
     letter-spacing: 0.5px;
-    
+    transition: 0.1s ease;
 }
 
 .navbar__right__upper__list li a:hover,
