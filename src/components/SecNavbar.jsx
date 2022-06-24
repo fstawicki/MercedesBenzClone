@@ -9,22 +9,22 @@ const SecNavbar = () => {
       <div className='SecNavbar__container'>
         <ul className='SecNavbar__container__ul'>
             <li>
-              <a href='#' activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500}>A-Class Saloon</a>
+              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>A-Class Saloon</a>
             </li>
             <li>
-              <a href='#' activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500}>Exterior</a>
+              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Exterior</a>
             </li>
             <li>
-              <a href='#' activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500}>Interior</a>
+              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Interior</a>
             </li>
             <li>
-              <a href='#' activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500}>Technology</a>
+              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Technology</a>
             </li>
             <li>
-              <a href='#' activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500}>Safety</a>
+              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Safety</a>
             </li>
             <li>
-              <a href='#' activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500}>Mercedes-Benz in your country</a>
+              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Mercedes-Benz in your country</a>
             </li>
           </ul>
       </div>

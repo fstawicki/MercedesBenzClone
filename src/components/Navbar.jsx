@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import './Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faInfoCircle, faBars } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +7,7 @@ import { faMagnifyingGlass, faInfoCircle, faBars } from "@fortawesome/free-solid
 const Navbar = () => {
 
     const [language, setLanguage] = useState('Deutsch');
+    const [isMenu, setIsMenu] = useState(false);
 
     const changeLanguage = (event) => {
         event.preventDefault();
@@ -17,8 +18,15 @@ const Navbar = () => {
         }
     }
 
+    const viewMenu = (event) => {
+        event.preventDefault();
+        setIsMenu((prevState) => !prevState);
+    }
+    
+
 
   return (
+    <Fragment>
     <nav className='nav'>
         <div className="navbar">
         <a href='#' className="navbar__left">
@@ -46,12 +54,28 @@ const Navbar = () => {
                     <li className='big-screen'><a href="#">Events</a></li>             
                     <li className='big-screen'><a href="#">Lifestyle</a></li>             
                     <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/></a></li>
-                    <li className='media'><a href="#"><FontAwesomeIcon icon={faBars}/></a></li>
+                    <li className='media'><a href="#" onClick={viewMenu}><FontAwesomeIcon icon={faBars}/></a></li>
                 </ul>
             </div>
         </div>
         </div>
     </nav>
+    {isMenu && (
+            <div className="smallMenu">
+                <ul className="smallMenu__ul">
+                    <li className="smallMenu__ul__li"><a href="#">Vehicles</a></li>
+                    <li className="smallMenu__ul__li"><a href="#">Design</a></li>
+                    <li className="smallMenu__ul__li"><a href="#">Innovation</a></li>
+                    <li className="smallMenu__ul__li"><a href="#">Museum & History</a></li>
+                    <li className="smallMenu__ul__li"><a href="#">Sports</a></li>
+                    <li className="smallMenu__ul__li"><a href="#">Events</a></li>
+                    <li className="smallMenu__ul__li"><a href="#">Lifestyle</a></li>
+                    <li className="smallMenu__ul__li"><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/> Search</a></li>
+                </ul>
+            </div>
+        )
+    }
+    </Fragment>
   )
 }
 
