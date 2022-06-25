@@ -4,6 +4,8 @@ import './NavbarSmallMenu.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faInfoCircle, faBars } from "@fortawesome/free-solid-svg-icons";
 
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 
 const Navbar = () => {
 
@@ -23,7 +25,15 @@ const Navbar = () => {
         event.preventDefault();
         setIsMenu((prevState) => !prevState);
     }
+
     
+    /*
+    Line below referes to third party library called 'body-scroll-lock'. Prevents scroling, when small menu is open.
+    Alternatively, overflow: hidden, on body element can be used in this situation. 
+    Manipulating body doesn't equal manipulating DOM, because react manipulates DOM only in App component.
+    I used this library tho, due to overflow: hidden not working on IOS mobile
+    */
+    isMenu ? disableBodyScroll(document) : enableBodyScroll(document)
 
 
   return (
