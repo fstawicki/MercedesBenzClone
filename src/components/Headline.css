@@ -1,0 +1,75 @@
+.Headline{
+    background-color: black;
+    color: white;
+
+}
+
+.Headline__container{
+    margin: 0 auto;
+    padding: 60px 2.5rem 60px 2.5rem;
+    width: 90%; 
+}
+
+.Headline__container__title{
+    font-size: 60px;
+    font-family: 'MBCorpoATitle';
+    font-weight: 100;
+    margin-bottom: 1rem;
+    max-width: 50%;
+}
+
+.Headline__container__text{
+    font-size: 18px;
+    line-height: 1.9rem;
+    max-width: 50%;
+}
+
+
+
+/* oryginally 1280px */
+@media (max-width: 1350px){
+
+    .Headline__container__title,
+    .Headline__container__text{
+        max-width: 66%;
+    }
+
+
+    .Headline__container__title{
+        font-size: 40px;
+    }
+
+    .Headline__container__text{
+        font-size: 1rem;
+    }
+
+
+}
+
+
+@media (max-width: 1230px){
+
+
+
+}
+
+@media (max-width: 1045px){
+
+    .Headline__container__title,
+    .Headline__container__text{
+        max-width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 768px){
+
+    
+}
+
+@media (max-width: 510px){
+
+
+}

@@ -12,11 +12,11 @@ const HeroPage = (props) => {
         <div className='HeroPage__overlay__lowerText'>
           <div className='HeroPage__overlay__lowerText__left'>
             <p>Infotainment system</p>
-            <h2>MBUX</h2>
+            <p className='HeroPage__overlay__lowerText__left__large-text'>MBUX</p>
           </div>
           <div className='HeroPage__overlay__lowerText__right'>
             <p>Available as</p>
-            <h2>Plug-in Hybrid</h2>
+            <p className='HeroPage__overlay__lowerText__right__large-text'>Plug-in Hybrid</p>
           </div>
         </div>
     </div>

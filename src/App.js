@@ -4,6 +4,7 @@ import Container from './components/Container';
 import Navbar from './components/Navbar';
 import SecNavbar from './components/SecNavbar';
 import Wrapper from './components/Wrapper';
+import Headline from './components/Headline';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <HeroPage/>
           <SecNavbar />
         </Wrapper>
+        <Headline />
 
       <Container />
     </div>

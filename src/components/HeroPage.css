@@ -50,7 +50,9 @@
 
 
 
-.HeroPage h1,h2{
+.HeroPage h1,
+.HeroPage__overlay__lowerText__left__large-text,
+.HeroPage__overlay__lowerText__right__large-text{
     font-family: 'MBCorpoATitle';
     font-weight: 100;
 }
@@ -58,14 +60,16 @@
 .HeroPage h1{
     font-size: 70px;
 }
-.HeroPage h2{
+.HeroPage__overlay__lowerText__left__large-text,
+.HeroPage__overlay__lowerText__right__large-text{
     font-size: 50px;
 }
 
 /* oryginally 1280px */
 @media (max-width: 1350px){
     .HeroPage h1,
-    .HeroPage h2{
+    .HeroPage__overlay__lowerText__left__large-text,
+.HeroPage__overlay__lowerText__right__large-text{
         font-size: 40px;
     }
 
