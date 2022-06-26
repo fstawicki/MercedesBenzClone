@@ -36,3 +36,26 @@
 .navbar__smallMenu__ul__li a:hover{
     color: #00adef;
 }
+
+
+@media (max-width: 1350px){
+    
+
+}
+
+@media (max-width: 1023px){
+
+    
+    
+
+
+}
+
+@media (max-width: 768px){
+
+    .navbar__smallMenu__ul{
+        margin-top: 1rem;
+
+    }
+    
+}

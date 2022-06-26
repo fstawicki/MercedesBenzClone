@@ -132,6 +132,14 @@
 
 @media (max-width: 768px){
 
+    .navbar{
+        width: 100%;
+    }
+
+    .navbar__left{
+        margin-left: 1rem;
+    }
+
     .big-screen{
         display: none;
     }
