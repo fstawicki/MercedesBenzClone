@@ -14,24 +14,28 @@
 
 .SwiperSlide__text{
 
-    width: 25%;
+    width: 22%;
     height: 50vh;
-    float: left;
     position: absolute;
-    left: 6rem;
+    left: 7.5rem;
     top: 10vh;
     z-index: 1000;
-    background-color: #92AD40;
-    padding: 5px;
-    color: #FFFFFF;
-    font-weight: bold;
+    background-color: white;
+    padding: 3rem 3rem;
 }
 
 .SwiperSlide__text__title{
-
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 1.3rem;
 }
 
 .SwiperSlide__text__paragraph{
     word-wrap: initial;
+    color: #999;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
 }
 
