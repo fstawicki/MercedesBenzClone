@@ -39,3 +39,15 @@
     letter-spacing: 0.5px;
 }
 
+.swiper-pagination{
+    width: 90vw;
+    padding: 2rem;
+    background-color: aqua;
+}
+
+
+.pagination__container{
+    z-index: 44444;
+    color: aqua;
+    background-color: blue;
+}

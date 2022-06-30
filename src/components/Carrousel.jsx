@@ -9,6 +9,8 @@ import 'swiper/css/scrollbar';
 
 import './Carrousel.css';
 
+import { Pagination } from "swiper";
+
 const Carrousel = () => {
 
   const slides = [];
@@ -44,6 +46,16 @@ const Carrousel = () => {
     },
   ]
 
+
+    // If we need pagination
+    const pagination = {
+			clickable: true,
+      renderBullet: function (index, className) {
+          return '<div class="' + className + '">' + (slides_texts[index].title) + '</div>';
+        },
+    };
+
+
   //i < 5 zmienic 5 pozniej na props
   for(let i=0; i<3; i+=1){
     slides.push(
@@ -53,6 +65,9 @@ const Carrousel = () => {
           <p className='SwiperSlide__text__paragraph'>{slides_texts[i].paragraph}</p>
         </div>
         <img className='SwiperSlide__img' src={require(`../images/mercedesphotos/carrousels/carrousel1-${i+1}.jpg`)} alt='mercedes image'  />
+        <div className='pagination__container'>
+
+        </div>
       </SwiperSlide>
     )
   }
@@ -60,7 +75,13 @@ const Carrousel = () => {
 
   return (
     <div className='Carrousel'>
-    <Swiper id='main' className='Carrousel__swiper'>
+    <Swiper 
+      loop={true} 
+      id='main'
+      pagination={pagination}
+      modules={[Pagination]}
+      className="mySwiper"
+    >
       {slides}
 
     </Swiper>

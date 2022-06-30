@@ -6,6 +6,7 @@ import SecNavbar from './components/SecNavbar';
 import Wrapper from './components/Wrapper';
 import Headline from './components/Headline';
 import Carrousel from './components/Carrousel';
+import C2 from './components/C2';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <SecNavbar />
         </Wrapper>
         <Headline />
+        {/* <C2 /> */}
+
         <Carrousel />
 
       <Container />
