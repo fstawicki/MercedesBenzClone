@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 // import SwiperCore from 'swiper';
@@ -61,13 +61,12 @@ const Carrousel = () => {
   for(let i=0; i<3; i+=1){
     slides.push(
       <SwiperSlide className='SwiperSlide' key={`slide-${i}`}>
+        <img className='SwiperSlide__img' src={require(`../images/mercedesphotos/carrousels/carrousel1-${i+1}.jpg`)} alt='mercedes image'  />
+        <div className='SwiperSlide__wrapper'>
         <div className='SwiperSlide__text'>
           <p className='SwiperSlide__text__title'>{slides_texts[i].title}</p>
           <p className='SwiperSlide__text__paragraph'>{slides_texts[i].paragraph}</p>
         </div>
-        <img className='SwiperSlide__img' src={require(`../images/mercedesphotos/carrousels/carrousel1-${i+1}.jpg`)} alt='mercedes image'  />
-        <div className='pagination__container'>
-
         </div>
       </SwiperSlide>
     )
@@ -75,6 +74,8 @@ const Carrousel = () => {
 
 
   return (
+    <Fragment>
+
     <div className='Carrousel'>
     <Swiper 
       loop={true} 
@@ -82,11 +83,12 @@ const Carrousel = () => {
       pagination={pagination}
       modules={[Pagination]}
       className="mySwiper"
-    >
+      >
       {slides}
 
     </Swiper>
-    </div>
+      </div>
+    </Fragment>
   )
 }
 

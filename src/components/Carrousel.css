@@ -1,6 +1,8 @@
 .Carrousel{
     color: black;
-    height: 600px;
+    background-color: red;
+    height: 80vh;
+    
 }
 
 .SwiperSlide__img{
@@ -8,8 +10,20 @@
     height: 80vh;
 }
 
+.mySwiper{
+    height: 80vh;
+    width: 90%;
+    background-color: aqua;
+}
+
 .SwiperSlide{
     position: relative;
+    outline: red;
+}
+
+.SwiperSlide__wrapper{
+    background-color: aqua;
+    height: 122vh;
 }
 
 .SwiperSlide__text{
@@ -40,19 +54,25 @@
 }
 
 .swiper-pagination{
-    width: 90vw;
-    padding: 2rem;
-    background-color: aqua;
+    width: 9vw;
+    margin-left: 7rem;
+    display: flex;
+    border-top: 1px solid white;
+
 }
 
-
-.pagination__container{
-    z-index: 44444;
-    color: aqua;
-    background-color: blue;
-}
 
 
 .bulletClass{
+    width: 10vw;
+    
+    
+    
+    
+    padding: 2rem;
+    background-color: aqua;
+    border-radius: 0;
     color: yellow;
 }
+
+
