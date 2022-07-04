@@ -51,7 +51,8 @@ const Carrousel = () => {
     const pagination = {
 			clickable: true,
       renderBullet: function (index, className) {
-          return '<div class="' + className + '">' + (slides_texts[index].title) + '</div>';
+          let newClassName = className + ' bulletClass'
+          return '<div class="' + newClassName + '">' + (slides_texts[index].title) + '</div>';
         },
     };
 
