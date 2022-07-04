@@ -11,9 +11,19 @@ import './Carrousel.css';
 
 import { Pagination } from "swiper";
 
+import styled from 'styled-components';
+
+
+// export const SlideWrapper = styled.div`
+
+// background-image: url('../images/mercedesphotos/carrousels/carrousel1-${i+1}.jpg${image}');
+
+// `
+ 
+
 const Carrousel = () => {
 
-  const slides = [];
+  
   // const images = [
   //   {
   //     image: `../images/mercedesphotos/carrousels/carrousel1-1.jpg`,
@@ -51,17 +61,22 @@ const Carrousel = () => {
     const pagination = {
 			clickable: true,
       renderBullet: function (index, className) {
-          let newClassName = className + ' bulletClass'
+          let newClassName = className + ' bulletClass';
           return '<div class="' + newClassName + '">' + (slides_texts[index].title) + '</div>';
         },
     };
 
 
+
+
+    const slides = [];
+
   //i < 5 zmienic 5 pozniej na props
   for(let i=0; i<3; i+=1){
     slides.push(
       <SwiperSlide className='SwiperSlide' key={`slide-${i}`}>
-        <img className='SwiperSlide__img' src={require(`../images/mercedesphotos/carrousels/carrousel1-${i+1}.jpg`)} alt='mercedes image'  />
+        
+        {/* <img className='SwiperSlide__img' src={require(`../images/mercedesphotos/carrousels/carrousel1-${i+1}.jpg`)} alt='mercedes image'  /> */}
         <div className='SwiperSlide__wrapper'>
         <div className='SwiperSlide__text'>
           <p className='SwiperSlide__text__title'>{slides_texts[i].title}</p>

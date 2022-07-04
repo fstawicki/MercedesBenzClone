@@ -1,41 +1,50 @@
 .Carrousel{
     color: black;
     background-color: red;
-    height: 80vh;
-    
+    height: 85vh;
 }
 
 .SwiperSlide__img{
     width: 100%;
-    height: 80vh;
+    height: 85vh;
 }
 
 .mySwiper{
-    height: 80vh;
-    width: 90%;
+    height: 85vh;
+    width: 100%;
     background-color: aqua;
 }
 
 .SwiperSlide{
-    position: relative;
-    outline: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/mercedesphotos/carrousels/carrousel1-1.jpg');
+    width: 100%;
+    height: 85vh;
+
+
+
+
+    
 }
 
 .SwiperSlide__wrapper{
-    background-color: aqua;
-    height: 122vh;
+    width: 85%;
+    margin: 0 auto;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* border-bottom: 1px solid rgb(94, 94, 94); */
 }
 
 .SwiperSlide__text{
+    background-color: aliceblue;
+    width: 26%;
+    height: 55%;
+    padding: 3rem 3.5rem 0 3.5rem;
 
-    width: 22%;
-    height: 50vh;
-    position: absolute;
-    left: 7.5rem;
-    top: 10vh;
-    z-index: 1000;
-    background-color: white;
-    padding: 3rem 3rem;
 }
 
 .SwiperSlide__text__title{
@@ -54,25 +63,37 @@
 }
 
 .swiper-pagination{
-    width: 9vw;
-    margin-left: 7rem;
+    height: 9vh;
     display: flex;
-    border-top: 1px solid white;
 
+    border-top: 1px solid rgb(80, 80, 80);
+
+    padding: 0 7.5rem;
 }
+/* 
+.SwiperSlide__wrapper:first-of-type{
+    border-bottom: 1px solid rgb(190, 98, 98);
+} */
 
 
 
 .bulletClass{
     width: 10vw;
     
+    word-wrap: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     
     
-    padding: 2rem;
-    background-color: aqua;
+    
+    padding: 2.5rem;
+    background-color: transparent;
+    border-top: 1px solid white;
+    font-size: 0.9rem;
     border-radius: 0;
-    color: yellow;
+    color: white;
 }
-
 
