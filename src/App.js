@@ -6,7 +6,6 @@ import SecNavbar from './components/SecNavbar';
 import Wrapper from './components/Wrapper';
 import Headline from './components/Headline';
 import Carrousel from './components/Carrousel';
-import C2 from './components/C2';
 import ImageHeadline from './components/ImageHeadline';
 
 
@@ -29,6 +28,26 @@ const headlineData = {
   }
 }
 
+const ImageHeadlineData = {
+  design: {
+    headlineTitle: 'A-Class Design',
+    headlineParagraph: 'Learn more about the'
+  },
+  interior: {
+    headlineTitle: 'A-Class Interior',
+    headlineParagraph: 'Learn more about the'
+  },
+  technology: {
+    headlineTitle: 'Technology.',
+    headlineParagraph: 'Learn more about the'
+  },
+  safety: {
+    headlineTitle: 'Safety.',
+    headlineParagraph: 'Learn more about'
+  }
+}
+
+
 function App() {
   return (
     <div className="App">
@@ -39,7 +58,7 @@ function App() {
         </Wrapper>
         <Headline title={headlineData.exterior.headlineTitle} paragraph={headlineData.exterior.headlineParagraph} />
         <Carrousel />
-        <ImageHeadline />
+        <ImageHeadline title={ImageHeadlineData.design.headlineTitle} paragraph={ImageHeadlineData.design.headlineParagraph} />
         <Headline title={headlineData.interior.headlineTitle} paragraph={headlineData.interior.headlineParagraph} />
         {/* karuzela
         element ze zdjęciem */}
