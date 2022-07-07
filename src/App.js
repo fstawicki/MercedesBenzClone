@@ -7,6 +7,7 @@ import Wrapper from './components/Wrapper';
 import Headline from './components/Headline';
 import Carrousel from './components/Carrousel';
 import C2 from './components/C2';
+import ImageHeadline from './components/ImageHeadline';
 
 
 const headlineData = {
@@ -38,7 +39,7 @@ function App() {
         </Wrapper>
         <Headline title={headlineData.exterior.headlineTitle} paragraph={headlineData.exterior.headlineParagraph} />
         <Carrousel />
-        {/* element ze zdjęciem */}
+        <ImageHeadline />
         <Headline title={headlineData.interior.headlineTitle} paragraph={headlineData.interior.headlineParagraph} />
         {/* karuzela
         element ze zdjęciem */}
