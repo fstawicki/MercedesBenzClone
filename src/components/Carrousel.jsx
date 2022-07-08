@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 // import SwiperCore from 'swiper';
@@ -63,19 +63,52 @@ const Carrousel = () => {
   ]
 
 
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
+
+  function getWindowSize() {
+    const {innerWidth} = window;
+    return {innerWidth};
+  }
+
+  console.log(windowSize.innerWidth);
+
+
+  // const [mobileWidth, setMobileWidth] = useState(false);
+  // if(windowSize.innerWidth < 820){
+  //   setMobileWidth(true);
+  // }
+
+
     // If we need pagination
-    const pagination = {
+  const pagination = {
 			clickable: true,
       renderBullet: function (index, className) {
           let newClassName = className + ' bulletClass';
           return '<div class="' + newClassName + '">' + (slides_texts[index].title) + '</div>';
         },
-    };
+  };
+
+  //mobile
+  const paginationMobile = {
+    clickable: true,
+  }
 
 
 
-
-    const slides = [];
+  const slides = [];
 
   //i < 5 zmienic 5 pozniej na props i i=0 tez na np 4 jak zaczniemy 2 sekcje karuzeli
   for(let i=0; i<3; i+=1){
