@@ -97,16 +97,21 @@
 
     }
 
+    .HeroPage__overlay{
+        padding-left: 1rem;
+    }
+
 }
 
 @media (max-width: 768px){
 
-    .HeroPage__overlay__lowerText{
-        display: none;
-    }
 
     .HeroPage__overlay{
-        padding-left: 1rem;
+        padding-left: 0;
+    }
+
+    .HeroPage__overlay__lowerText{
+        display: none;
     }
 
     .HeroPage__overlay__upperText{

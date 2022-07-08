@@ -24,9 +24,6 @@
     height: 85vh;
 
 
-
-
-    
 }
 
 .SwiperSlide__wrapper{
@@ -76,7 +73,6 @@
 } */
 
 
-
 .bulletClass{
     width: 10vw;
     
@@ -86,14 +82,161 @@
     justify-content: center;
     align-items: center;
     
-    
-    
-    
-    padding: 2.5rem;
+    padding: 2.5rem 0;
     background-color: transparent;
     border-top: 1px solid white;
     font-size: 0.9rem;
     border-radius: 0;
-    color: white;
+    color: #00adef;
 }
 
+.bulletClass:hover{
+    text-decoration: underline;
+    color: #00abefb7;
+}
+
+
+@media (max-width: 1500px){
+    
+    .SwiperSlide__text{
+        width: 30%;
+        padding: 3rem 3rem 0 3rem;
+    
+    }
+    
+    .SwiperSlide__text__title{
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 1.3rem;
+    }
+    
+    .SwiperSlide__text__paragraph{
+        word-wrap: initial;
+        color: #999;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+    }
+
+
+
+
+}
+
+/* oryginally 1280px */
+@media (max-width: 1350px){
+
+    .bulletClass{
+        width: 13vw;
+        margin: 0 auto auto auto;
+        line-height: 1rem;
+    }
+
+    .SwiperSlide__text{
+        width: 30%;
+        padding: 2rem 2rem 0 2rem;
+    
+    }
+
+    .swiper-pagination{
+        padding: 0 5.5rem;
+    }
+
+
+
+}
+
+
+@media (max-width: 1230px){
+
+    .Carrousel{
+        color: black;
+        background-color: red;
+        height: 70vh;
+    }
+    
+    .SwiperSlide__img{
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .mySwiper{
+        height: 70vh;
+        width: 100%;
+        background-color: aqua;
+    }
+    
+    .SwiperSlide{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-image: url('../images/mercedesphotos/carrousels/carrousel1-1.jpg'); */
+        width: 100%;
+        height: 70vh;
+    }
+
+    .SwiperSlide__text{
+        width: 35%;
+        padding: 2rem 2rem 0 2rem;
+    
+    }
+
+    
+    .swiper-pagination{
+        padding: 0 4.5rem;
+    }
+
+
+}
+
+@media (max-width: 1045px){
+
+    .SwiperSlide__wrapper{
+        width: 90%;
+        margin: 0 auto;
+        height: 70vh;
+    }
+
+
+    .bulletClass{
+        width: 14vw;
+    }
+
+}
+
+@media (max-width: 955px){
+
+    .bulletClass{
+        width: 18vw;
+    }
+
+    
+    .swiper-pagination{
+        padding: 0 4rem;
+    }
+    
+
+    .SwiperSlide__text{
+        width: 40%;
+    }
+    
+    .SwiperSlide__text__title{
+
+        margin-bottom: 1.1rem;
+    }
+    
+    .SwiperSlide__text__paragraph{
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+@media (max-width: 768px){
+
+    
+}
+
+@media (max-width: 510px){
+
+
+}

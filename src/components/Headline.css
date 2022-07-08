@@ -60,6 +60,10 @@
         max-width: 100%;
     }
 
+    .Headline__container{
+        padding: 60px 1rem 60px 1rem;
+        width: 90%; 
+    }
 
 
 }
