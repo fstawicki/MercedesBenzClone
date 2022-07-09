@@ -97,7 +97,7 @@ const Carrousel = () => {
 			clickable: true,
       renderBullet: function (index, className) {
           let newClassName = className + ' bulletClass';
-          return '<div class="' + newClassName + '">' + (slides_texts[index].title) + '</div>';
+          return '<div class="' + className + '">' + (slides_texts[index].title) + '</div>';
         },
   };
 
