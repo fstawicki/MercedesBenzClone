@@ -63,6 +63,8 @@ const Carrousel = () => {
   ]
 
 
+  const [winwidth, setwinwidth] = useState(false);
+
   const [windowSize, setWindowSize] = useState(getWindowSize());
 
   useEffect(() => {
@@ -71,6 +73,11 @@ const Carrousel = () => {
     }
 
     window.addEventListener('resize', handleWindowResize);
+
+    // if(windowSize.innerWidth < 810){
+    //   setwinwidth(true);
+    // }
+    //dodaj do dependency windowSize.innerWidth
 
     return () => {
       window.removeEventListener('resize', handleWindowResize);
@@ -83,29 +90,15 @@ const Carrousel = () => {
     return {innerWidth};
   }
 
-  console.log(windowSize.innerWidth);
-
-
-  // const [mobileWidth, setMobileWidth] = useState(false);
-  // if(windowSize.innerWidth < 820){
-  //   setMobileWidth(true);
-  // }
-
-
-    // If we need pagination
+  
+  // If we need pagination
   const pagination = {
 			clickable: true,
       renderBullet: function (index, className) {
-          let newClassName = className + ' bulletClass';
-          return '<div class="' + className + '">' + (slides_texts[index].title) + '</div>';
+          let newClassName = 'slideTitle';
+            return '<div class="' + className + '"><p class="' + newClassName + '">' + (slides_texts[index].title) + '</p></div>';
         },
   };
-
-  //mobile
-  const paginationMobile = {
-    clickable: true,
-  }
-
 
 
   const slides = [];

@@ -238,24 +238,97 @@
 
 @media (max-width: 810px){
 
+
+    .Carrousel{
+        color: black;
+        background-color: red;
+        height: 80vh;
+    }
+    
+    .mySwiper{
+        height: 80vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .SwiperSlide{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-image: url('../images/mercedesphotos/carrousels/carrousel1-1.jpg'); */
+        width: 100%;
+        height: 50vh;
+    
+        
+    
+    }
+    
+    .SwiperSlide__wrapper{
+        width: 85%;
+        margin: 0 auto;
+        height: 68vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        /* border-bottom: 1px solid rgb(94, 94, 94); */
+    }
+    
+    .SwiperSlide__text{
+        background-color: aliceblue;
+        width: 90%;
+        height: 45%;
+        padding: 2rem;
+    
+    }
+    
+    .SwiperSlide__text__title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 1rem;
+    }
+    
+    .SwiperSlide__text__paragraph{
+        word-wrap: initial;
+        color: #999;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.5px;
+    }
+    
+
+
+
+
+    /* PAGINACJA DONE :D */
     .swiper-pagination{
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        padding: 0;
+        height: 10vh;
     }
 
     .swiper-pagination-bullet{
         background-color:  rgba(255, 255, 255, 0.75);
+        border-radius: 100%;
         display: block;
-        width: 5px;
-        height: 5px;
+        width: 6px;
+        height: 6px;
+    }
+
+    .slideTitle{
+        display: none;
     }
     
 }
 
 @media (max-width: 510px){
 
+    .SwiperSlide__text{
+        padding: 1rem 2rem 0 2rem;
+    
+    }
 
 }
