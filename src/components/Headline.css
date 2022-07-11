@@ -6,7 +6,7 @@
 
 .Headline__container{
     margin: 0 auto;
-    padding: 60px 2.5rem 60px 2.5rem;
+    padding: 60px 2.5rem;
     width: 90%; 
 }
 
@@ -61,7 +61,7 @@
     }
 
     .Headline__container{
-        padding: 60px 1rem 60px 1rem;
+        padding: 30px 1rem 30px 1rem;
         width: 90%; 
     }
 

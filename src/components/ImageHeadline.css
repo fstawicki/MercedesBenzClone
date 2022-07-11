@@ -3,18 +3,21 @@
     color: white;
 
     transition: 1s ease;
-    padding: 4rem 0 4rem 7rem;
-    padding-right: auto;
+
 }
 
 .ImageHeadline:hover{
     background-color: #090909;
+    cursor: pointer;
 }
 
 .ImageHeadline__container{
     display: flex;
     align-items: center;
     justify-content: left;
+    margin: 0 auto;
+    padding: 60px 2.5rem 60px 2.5rem;
+    width: 90%; 
 
 }
 
@@ -48,6 +51,47 @@
     font-weight: 100;
 }
 
-.ImageHeadline__container__arrow{
+.ImageHeadline__container__arrowdiv{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+}
+
+.ImageHeadline__container__arrowdiv__arrow{
+    
+}
+
+@media (max-width: 1045px){
+
+    .ImageHeadline__container{
+        padding: 60px 1rem 60px 1rem;
+        width: 90%; 
+    }
+
+    .ImageHeadline__container__text__title{
+        font-size: 40px;
+    }
+
+
+}
+
+@media (max-width: 1350px){
+
+    
+
+}
+
+@media (max-width: 1070px){
+
+    /* .ImageHeadline__container{
+        padding: 3rem 0 3rem 3rem;
+        padding-right: auto;
+    } */
+}
+
+@media (max-width: 810px){
+
+    .ImageHeadline__container__imagediv{
+        display: none;
+    }
 
 }
