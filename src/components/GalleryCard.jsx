@@ -3,7 +3,7 @@ import React from 'react'
 const GalleryCard = (props) => {
   return (
     <div className="Gallery__wrapper__card">
-        <img src={props.imageURL} className="Gallery__wrapper__card__image" alt="" />
+        <img src={props.image} className="Gallery__wrapper__card__image" alt="" />
         <div className="Gallery__wrapper__card__textdiv">
             <p className="Gallery__wrapper__card__textdiv__title">
                ssss{props.title}
