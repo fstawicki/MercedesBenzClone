@@ -7,7 +7,7 @@
 }
 
 .ImageHeadline:hover{
-    background-color: #090909;
+    background-color: #0d0d0d;
     cursor: pointer;
 }
 
@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     background-size: contain; */
 
-    min-width: 25%;
+    min-width: 20%;
     height: 20vh;
 
     margin-right: 3rem;

@@ -165,12 +165,12 @@ const ImageHeadlineData = {
     imageURL: hi2image
   },
   technology: {
-    headlineTitle: 'Technology.',
+    headlineTitle: 'A-Class Technology',
     headlineParagraph: 'Learn more about the',
     imageURL: hi3image
   },
   safety: {
-    headlineTitle: 'Safety.',
+    headlineTitle: 'Safety',
     headlineParagraph: 'Learn more about',
     imageURL: hi4image
   }
@@ -190,10 +190,13 @@ function App() {
         <ImageHeadline imgheadlineData={ImageHeadlineData.design} />
         <Headline title={headlineData.interior.headlineTitle} paragraph={headlineData.interior.headlineParagraph} />
         <Carrousel slidesData={carrousel2} slidesNumber={6} />
+        <ImageHeadline imgheadlineData={ImageHeadlineData.interior} />
         <Headline title={headlineData.technology.headlineTitle} paragraph={headlineData.technology.headlineParagraph} />
         <Carrousel slidesData={carrousel3} slidesNumber={4} />
+        <ImageHeadline imgheadlineData={ImageHeadlineData.technology} />
         <Headline title={headlineData.safety.headlineTitle} paragraph={headlineData.safety.headlineParagraph} />
         <Carrousel slidesData={carrousel4} slidesNumber={4} />
+        <ImageHeadline imgheadlineData={ImageHeadlineData.safety} />
 
       <Container />
     </div>
