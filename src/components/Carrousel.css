@@ -1,6 +1,6 @@
 .Carrousel{
     color: black;
-    background-color: red;
+    background-color: black;
     height: 85vh;
 }
 
@@ -12,17 +12,15 @@
 .mySwiper{
     height: 85vh;
     width: 100%;
-    background-color: aqua;
+    background-color: black;
 }
 
 .SwiperSlide{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-image: url('../images/mercedesphotos/carrousels/carrousel1-1.jpg'); */
     width: 100%;
-    height: 85vh;
-
+    height: 83.5vh;
 
 }
 
@@ -66,6 +64,7 @@
     justify-content: left;
     align-items: center;
     border-top: 1px solid rgb(80, 80, 80);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.925) 100%);
 
     padding-left: 7.5rem;
 }
@@ -87,10 +86,7 @@
 
 .swiper-pagination-bullet:hover{
     text-decoration: underline;
-    color: #00abefb7;
 }
-
-
 
 @media (max-width: 1500px){
     
@@ -158,16 +154,15 @@
     }
     
     .mySwiper{
-        height: 70vh;
+        height: 72vh;
         width: 100%;
-        background-color: aqua;
+        background-color: black;
     }
     
     .SwiperSlide{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-image: url('../images/mercedesphotos/carrousels/carrousel1-1.jpg'); */
         width: 100%;
         height: 70vh;
     }
@@ -255,7 +250,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-image: url('../images/mercedesphotos/carrousels/carrousel1-1.jpg'); */
         width: 100%;
         height: 40vh;
     
@@ -270,7 +264,6 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        /* border-bottom: 1px solid rgb(94, 94, 94); */
     }
     
     .SwiperSlide__text{
@@ -295,10 +288,6 @@
         line-height: 1.2rem;
         letter-spacing: 0.5px;
     }
-    
-
-
-
 
     /* PAGINACJA DONE :D */
     .swiper-pagination{
@@ -328,21 +317,15 @@
 
     .SwiperSlide__text{
         padding: 1rem 2rem 0 2rem;
-        width: 90%;
         height: 50%;
     
     }
 
     .SwiperSlide__text__title{
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 30px;
         margin-bottom: 0.5rem;
     }
     
     .SwiperSlide__text__paragraph{
-        word-wrap: initial;
-        color: #999;
         font-size: 12px;
         letter-spacing: 0.3px;
     }
@@ -350,8 +333,6 @@
     .SwiperSlide{
         width: 100%;
         height: 40vh;
-        
-    
     }
 
 }
