@@ -34,6 +34,7 @@ import c4_image1 from './images/mercedesphotos/carrousels/carrousel4-1.jpg';
 import c4_image2 from './images/mercedesphotos/carrousels/carrousel4-2.jpg';
 import c4_image3 from './images/mercedesphotos/carrousels/carrousel4-3.jpg';
 import c4_image4 from './images/mercedesphotos/carrousels/carrousel4-4.jpg';
+import Gallery from './components/Gallery';
 
 const carrousel1 = [
   {
@@ -198,7 +199,7 @@ function App() {
         <Carrousel slidesData={carrousel4} slidesNumber={4} />
         <ImageHeadline imgheadlineData={ImageHeadlineData.safety} />
 
-      <Container />
+        <Gallery />
     </div>
     
   );
