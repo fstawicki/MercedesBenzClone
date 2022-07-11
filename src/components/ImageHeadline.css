@@ -1,10 +1,53 @@
 .ImageHeadline{
     background-color: #1a1a1a;
     color: white;
+
+    transition: 1s ease;
+    padding: 4rem 0 4rem 7rem;
+    padding-right: auto;
 }
 
-.ImageHeadline__imagediv{
-    background-position: center;
+.ImageHeadline:hover{
+    background-color: #090909;
+}
+
+.ImageHeadline__container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.ImageHeadline__container__imagediv{
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain; */
+
+    min-width: 25%;
+    height: 20vh;
+
+    margin-right: 3rem;
+}
+
+.ImageHeadline__container__imagediv img{
+    width: 100%;
+    height: 100%;
+}
+
+.ImageHeadline__container__text{
+
+}
+
+.ImageHeadline__container__text__paragraph{
+    font-size: 1rem;
+}
+
+.ImageHeadline__container__text__title{
+    font-size: 50px;
+    font-family: 'MBCorpoATitle';
+    font-weight: 100;
+}
+
+.ImageHeadline__container__arrow{
+
 }
