@@ -7,6 +7,8 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const ImageHeadline = (props) => {
 
+  
+
   let imagedivStyle = {backgroundImage: `url(${props.imgheadlineData.imageURL})`};
 
   return (

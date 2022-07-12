@@ -200,6 +200,8 @@ function App() {
         <ImageHeadline imgheadlineData={ImageHeadlineData.safety} />
 
         <Gallery />
+
+        <Container />
     </div>
     
   );
