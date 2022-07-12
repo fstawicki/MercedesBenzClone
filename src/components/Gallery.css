@@ -15,23 +15,20 @@
     font-size: 60px;
     font-family: 'MBCorpoATitle';
     font-weight: 100;
+    text-align: center;
 }
-
-
-
-
-
 
 .Gallery__wrapper{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
   
 
 }
 
 .Gallery__wrapper__card{
-    margin: 0 0.3rem;
+    /* margin: 0 0.3rem; */
 
     background-color: #262626;
     display: flex;
@@ -55,6 +52,7 @@
 
 .Gallery__wrapper__card__textdiv{
     padding: 2.5rem 1.5rem;
+
 }
 
 .Gallery__wrapper__card__textdiv__title{
@@ -66,6 +64,123 @@
 
 .Gallery__wrapper__card__textdiv__paragraph1,
 .Gallery__wrapper__card__textdiv__paragraph2{
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.Gallery__wrapper__card__textdiv__icon{
+    margin-right: 0.5rem;
+}
+
+
+
+/* oryginally 1280px */
+@media (max-width: 1280px){
+
+    .Gallery__title__h2{
+        font-size: 40px;
+    }
+    .Gallery__wrapper{
+        grid-template-columns: 1fr 1fr;    
+    }
+    
+
+}
+
+
+@media (max-width: 680px){
+    .Gallery__wrapper{
+        grid-template-columns: 1fr;    
+    }
+
+    .Gallery__wrapper__card{
+        /* margin: 0 0.3rem; */
+    
+        background-color: #262626;
+        display: flex;
+        flex-direction: row;
+    
+        text-decoration: none;
+        color: white;
+
+        
+    
+    
+    }
+    
+    .Gallery__wrapper__card__image{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+        width: 30%;
+        height: 175px;
+    
+    }
+    
+    
+    
+    .Gallery__wrapper__card__textdiv__title{
+        font-size: 25px;
+        font-family: 'MBCorpoATitle';
+        font-weight: 100;
+        margin-bottom: 0.5rem;
+    }
+    
+    .Gallery__wrapper__card__textdiv__paragraph1,
+    .Gallery__wrapper__card__textdiv__paragraph2{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+}
+
+@media (max-width: 630px){
+
+    .Gallery__wrapper__card__textdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        
+    }
+
+    .Gallery__wrapper__card__textdiv__paragraph1,
+    .Gallery__wrapper__card__textdiv__paragraph2{
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+
+}
+
+@media (max-width: 420px){
+    .Gallery__wrapper__card__textdiv{
+ 
+        padding: 0;
+        padding-left: 1rem;
+        
+    }
+
+    .Gallery__wrapper__card__image{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+          min-width: 30%;
+          height: 175px;
+      
+      }
+
+    
+}
+
+@media (max-width: 810px){
+
+
+    
+}
+
+@media (max-width: 510px){
+
+    
 }

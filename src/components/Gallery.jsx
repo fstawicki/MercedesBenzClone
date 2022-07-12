@@ -2,8 +2,7 @@ import React from 'react'
 import GalleryCard from './GalleryCard';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCar, faLocationDot, faSteeringWheel} from "@fortawesome/free-solid-svg-icons";
-
+import {faCar, faGears, faLocationDot, faRoad} from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -27,7 +26,7 @@ const galleryData = [
         title: 'Configurator',
         paragraph1: 'Your personal A-Class',
         paragraph2: 'Configure now',
-        icon: faCar,
+        icon: faGears,
         // icon2: <FontAwesomeIcon icon="fa-solid fa-gears" />
     },
     {
@@ -35,15 +34,15 @@ const galleryData = [
         title: 'Retailer search',
         paragraph1: 'Mercedes-Benz retailers near you',
         paragraph2: 'Find a retailer now',
-        icon: faCar,
+        icon: faLocationDot,
         // icon2: <FontAwesomeIcon icon="fa-solid fa-location-dot" />
     },
     {
         imageURL: img4,
-        title: 'Test',
+        title: 'Test drive',
         paragraph1: 'Test the A-Class',
         paragraph2: 'Book a test drive now',
-        icon: faCar,
+        icon: faRoad,
         // icon: <FaRoad />,
         // icon2: <FontAwesomeIcon icon="fa-solid fa-steering-wheel" />
     },

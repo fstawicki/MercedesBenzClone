@@ -26,10 +26,10 @@ const GalleryCard = (props) => {
                {props.title}
             </p>
             <p className="Gallery__wrapper__card__textdiv__paragraph1">
-            <FontAwesomeIcon icon={faAngleRight}/>{props.paragraph1}
+            <FontAwesomeIcon className='Gallery__wrapper__card__textdiv__icon' icon={faAngleRight}/>{props.paragraph1}
             </p>
             <p className="Gallery__wrapper__card__textdiv__paragraph2">
-            <FontAwesomeIcon icon={props.icon}/>{props.paragraph2}
+            <FontAwesomeIcon className='Gallery__wrapper__card__textdiv__icon' icon={props.icon}/>{props.paragraph2}
             </p>
         </div>
     </a>
