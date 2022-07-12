@@ -35,6 +35,7 @@ import c4_image2 from './images/mercedesphotos/carrousels/carrousel4-2.jpg';
 import c4_image3 from './images/mercedesphotos/carrousels/carrousel4-3.jpg';
 import c4_image4 from './images/mercedesphotos/carrousels/carrousel4-4.jpg';
 import Gallery from './components/Gallery';
+import Links from './components/Links';
 
 const carrousel1 = [
   {
@@ -201,7 +202,7 @@ function App() {
 
         <Gallery />
 
-        <Container />
+        <Links />
     </div>
     
   );
