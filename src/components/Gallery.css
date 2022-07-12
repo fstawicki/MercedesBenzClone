@@ -1,0 +1,45 @@
+.Gallery{
+    background-color: black;
+    color: white;
+}
+
+.Gallery__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+
+}
+
+.Gallery__title__h2{
+    font-size: 60px;
+    font-family: 'MBCorpoATitle';
+    font-weight: 100;
+}
+
+.Gallery__wrapper{
+    display: flex;
+    width: 100%;
+    background-color: blue;
+    justify-content: space-between;
+
+
+}
+
+
+.Gallery__wrapper__card{
+    width: 50%;
+
+
+
+    background-color: aqua;
+}
+
+.Gallery__wrapper__card__image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+
+}

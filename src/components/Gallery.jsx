@@ -1,6 +1,8 @@
 import React from 'react'
 import GalleryCard from './GalleryCard';
 
+import './Gallery.css';
+
 
 import img1 from '../images/mercedesphotos/gallery/gallery1.jpg'; 
 import img2 from '../images/mercedesphotos/gallery/gallery2.jpg'; 
@@ -42,21 +44,21 @@ const Gallery = () => {
   return (
     <div className='Gallery'>
         <div className="Gallery__title">
-            <h2>Mercedes-Benz in your country.</h2>
+            <h2 className="Gallery__title__h2">Mercedes-Benz in your country.</h2>
         </div>
         <div className="Gallery__wrapper">
             {
                 galleryData.map((card) => {
-                    return <GalleryCard 
-                                image={card.imageURL} 
-                                title={card.title} 
-                                paragraph1={card.paragraph1} 
-                                paragraph2={card.paragraph2} 
-                                icon={card.icon}  
-                            />
+                    return (
+                        <GalleryCard 
+                            image={card.imageURL} 
+                            title={card.title} 
+                            paragraph1={card.paragraph1} 
+                            paragraph2={card.paragraph2} 
+                            icon={card.icon}/>
+                    )
                 })
             }
-            <GalleryCard/>
         </div>
     </div>
   )

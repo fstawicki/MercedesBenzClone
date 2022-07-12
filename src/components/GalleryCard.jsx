@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Gallery.css';
 
 const GalleryCard = (props) => {
   return (
@@ -6,7 +7,7 @@ const GalleryCard = (props) => {
         <img src={props.image} className="Gallery__wrapper__card__image" alt="" />
         <div className="Gallery__wrapper__card__textdiv">
             <p className="Gallery__wrapper__card__textdiv__title">
-               ssss{props.title}
+               {props.title}
             </p>
             <p className="Gallery__wrapper__card__textdiv__paragraph1">
                 {props.paragraph1}
