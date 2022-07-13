@@ -8,11 +8,11 @@ import { FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaLinkedin } from "react
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 
+
 const Footer = () => {
   return (
     <div className='Footer'>
         <section className='Links'>
-        
         <div className="Links__column">
             <div className="Links__column__headline">
                 <h2 className='Links__column__headline__title'>More Topics</h2>
@@ -95,11 +95,11 @@ const Footer = () => {
       <div className="Social__links">
         <p>Follow us and use the following social media platforms to get in contact with us and to share your passion for the brand, products and services of Mercedes-Benz.</p>
         <ul className="Social__links__list">
-          <li><a href="https://www.facebook.com/MercedesBenz"><FaFacebook /></a></li>
-          <li><a href="https://twitter.com/mercedesbenz"><FaTwitter /></a></li>
-          <li><a href="https://www.youtube.com/user/MercedesBenzTV"><FaYoutube /></a></li>
-          <li><a href="https://www.instagram.com/accounts/login/?next=/mercedesbenz/"><FaInstagram /></a></li>
-          <li><a href="https://www.linkedin.com/company/mercedes-benz_ag/"><FaLinkedin /></a></li>
+          <li><a href="https://www.facebook.com/MercedesBenz"><FaFacebook className='socialIcon' /></a></li>
+          <li><a href="https://twitter.com/mercedesbenz"><FaTwitter className='socialIcon' /></a></li>
+          <li><a href="https://www.youtube.com/user/MercedesBenzTV"><FaYoutube className='socialIcon' /></a></li>
+          <li><a href="https://www.instagram.com/accounts/login/?next=/mercedesbenz/"><FaInstagram className='socialIcon' /></a></li>
+          <li><a href="https://www.linkedin.com/company/mercedes-benz_ag/"><FaLinkedin className='socialIcon' /></a></li>
         </ul>
       </div>
       <div className="Social__spacer"></div>
@@ -107,27 +107,25 @@ const Footer = () => {
         <div className="Social__bottom__paragraph">
           <p>This is the International website of Mercedes-Benz AG. Visitors from the U.S., please visit our U.S. website <a href="https://www.mbusa.com/en/home">www.mbusa.com</a>.</p>
         </div>
-        <div className="Social__bottom_language">
-          <p><a href="">Deutsch</a><span>|</span><a href="">English</a></p> 
-        </div>
-        <div className="Social__bottom__links">
-          <ul className="Social__bottom__links__list">
-            <li><a href="">Provider</a></li>
-            <li><a href="">Legal Notice</a></li>
-            <li><a href="">Cookies</a></li>
-            <li><a href="">Privacy Statement</a></li>
-            <li><a href="https://www.mercedes-benz.com/en/newsfeed/">Newsfeed (RSS)</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="https://info.daimler.com/en/">Careers</a></li>
-            <li><a href="https://group.mercedes-benz.com/investors/?r=dai">Investor Relations</a></li>
-          </ul>
-        </div>
-        <div className="Social__bottom__navigation">
-          <button><a href="#">Top <FontAwesomeIcon icon={faChevronUp} /></a></button>
+        <div className='Social__bottom__section'>
+            <div className="Social__bottom_language">
+                <p><a href="">Deutsch</a><span> | </span><a href="">English</a></p> 
+            </div>
+            <div className="Social__bottom__links">
+                <ul className="Social__bottom__links__list">
+                    <li><a href="">Provider</a></li>
+                    <li><a href="">Legal Notice</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Privacy Statement</a></li>
+                    <li><a href="https://www.mercedes-benz.com/en/newsfeed/">Newsfeed (RSS)</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="https://info.daimler.com/en/">Careers</a></li>
+                    <li><a href="https://group.mercedes-benz.com/investors/?r=dai">Investor Relations</a></li>
+                </ul>
+                <a href="#" className="Social__bottom__navigation">Top <FontAwesomeIcon icon={faChevronUp} /></a>
+            </div>
         </div>
       </div>
-
-      
 
     </section>
 

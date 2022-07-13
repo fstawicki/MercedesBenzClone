@@ -1,3 +1,140 @@
+.Footer a{
+    text-decoration: none;
+    color: #999999;
+}
+
+.Footer ul{
+    list-style: none;
+}
+
+.Footer h2{
+    font-family: 'MBCorpoATitle';
+    font-weight: 100;
+}
+
+
+/* ----------------------------- */
+
+
 .Footer{
+    
+    padding: 0 7rem;
+    
     background-color: black;
+
+}
+
+.Links{
+    display: flex;
+}
+
+.Links__column{
+    width: 25%;
+}
+
+.Links__column__headline__title{
+    font-size: 34px;
+    padding: 1.5rem 0;
+
+    border-bottom: 0.5px solid #333;
+}
+
+.Links__column__links{
+    padding-top: 1.5rem;
+}
+
+.Links__column__links__list{
+
+}
+
+.Links__column__links__list li a{
+    font-size: 14px;
+    line-height: 22px;
+    transition: color .25s ease-out;
+}
+
+.Links__column__links__list li a:hover{
+    color: #00adef;
+}
+
+
+.Social{
+
+}
+
+.Social__title h2{
+    font-size: 34px;
+    padding: 1.5rem 0;
+
+    border-bottom: 0.5px solid #333;
+}
+
+.Social__links{
+    width: 35%;
+    padding: 2rem 0;
+}
+
+.Social__links p{
+    font-size: 18px;
+    color: #999999;
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.Social__links__list{
+    display: flex;
+    font-size: 2rem;
+}
+
+.Social__links__list li a{
+    margin-right: 3rem;
+    transition: color .25s ease-out;
+}
+
+.Social__links__list li a:hover{
+    color: #00adef;
+}
+
+.Social__spacer{
+    padding: 2rem 0;
+    border-top: 0.5px solid #333;
+    border-bottom: 0.5px solid #333;
+}
+
+.Social__bottom{
+
+}
+
+.Social__bottom__paragraph{
+    padding: 2rem 0;
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: #999999;
+}
+
+.Social__bottom__paragraph p a{
+    color: white;
+    transition: color .25s ease-out;
+}
+
+.Social__bottom__paragraph p a:hover{
+    color: #00adef;
+}
+
+.Social__bottom__section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Social__bottom__links{
+
+}
+
+.Social__bottom__links__list{
+    display: flex;
+}
+
+.Social__bottom__links__list li a{
+    padding: 0.5rem;
+    font-size: 14px;
 }
