@@ -1,6 +1,5 @@
 import './App.css';
 import HeroPage from './components/HeroPage';
-import Container from './components/Container';
 import Navbar from './components/Navbar';
 import SecNavbar from './components/SecNavbar';
 import Wrapper from './components/Wrapper';
@@ -35,7 +34,6 @@ import c4_image2 from './images/mercedesphotos/carrousels/carrousel4-2.jpg';
 import c4_image3 from './images/mercedesphotos/carrousels/carrousel4-3.jpg';
 import c4_image4 from './images/mercedesphotos/carrousels/carrousel4-4.jpg';
 import Gallery from './components/Gallery';
-import Links from './components/Links';
 import Footer from './components/Footer';
 
 const carrousel1 = [

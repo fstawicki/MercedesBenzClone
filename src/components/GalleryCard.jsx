@@ -1,22 +1,11 @@
 import React from 'react';
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BsGear, BsGeoAlt } from "react-icons/bs";
-import { FaCar, FaRoad } from "react-icons/fa";
 import './Gallery.css';
 
 const GalleryCard = (props) => {
 
   let cardStyle = {backgroundImage: `url(${props.image})`};
-
-
-  let icon ='ss';
-
-  let p1 = `${<FontAwesomeIcon icon={faAngleRight}/>} aaaa`
-
-  // <BsGear />
-  // <BsGeoAlt />
-  // <FaRoad />
 
   return (
     <a href='#' className="Gallery__wrapper__card">
