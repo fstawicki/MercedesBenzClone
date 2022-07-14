@@ -1,3 +1,8 @@
+import {useEffect, useState} from 'react';
+
+import {useInView} from 'react-intersection-observer';
+import {useAnimation} from 'framer-motion'
+
 import './App.css';
 import HeroPage from './components/HeroPage';
 import Navbar from './components/Navbar';
@@ -6,6 +11,8 @@ import Wrapper from './components/Wrapper';
 import Headline from './components/Headline';
 import Carrousel from './components/Carrousel';
 import ImageHeadline from './components/ImageHeadline';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
 
 
 import hi1image from './images/mercedesphotos/headlines/headline_a_class_design.jpg'
@@ -33,8 +40,9 @@ import c4_image1 from './images/mercedesphotos/carrousels/carrousel4-1.jpg';
 import c4_image2 from './images/mercedesphotos/carrousels/carrousel4-2.jpg';
 import c4_image3 from './images/mercedesphotos/carrousels/carrousel4-3.jpg';
 import c4_image4 from './images/mercedesphotos/carrousels/carrousel4-4.jpg';
-import Gallery from './components/Gallery';
-import Footer from './components/Footer';
+
+
+
 
 const carrousel1 = [
   {
@@ -179,13 +187,41 @@ const ImageHeadlineData = {
 
 
 function App() {
+
+  const {ref, inView } = useInView();
+  const [stickNavbar, setStickNavbar] = useState();
+  const animation = useAnimation();
+
+  useEffect(() => {
+
+    if(!inView){
+      setStickNavbar(true);
+    }else{
+      setStickNavbar(false);
+    }
+
+    console.log(inView);
+
+  })
+
+  let newClasses = 'SecNavbar';
+
+  if(stickNavbar){
+    newClasses += ' stickNavbar';
+  }
+
+
   return (
     <div className="App">
-        <Navbar />
-        <Wrapper>
+        <Navbar  />
+        
+        <Wrapper  >
+          <div ref={ref}>
           <HeroPage/>
-          <SecNavbar />
+          </div>
+          <SecNavbar stickyClass={newClasses} />
         </Wrapper>
+        
         <Headline title={headlineData.exterior.headlineTitle} paragraph={headlineData.exterior.headlineParagraph} />
         <Carrousel slidesData={carrousel1} slidesNumber={3} />
         <ImageHeadline imgheadlineData={ImageHeadlineData.design} />

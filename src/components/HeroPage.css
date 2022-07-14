@@ -124,7 +124,10 @@
     
 }
 
-@media (max-width: 510px){
+@media (max-width: 450px){
 
+    .HeroPage__overlay__upperText{
+        width: 80%;
+    }
 
 }

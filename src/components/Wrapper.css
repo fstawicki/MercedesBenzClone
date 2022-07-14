@@ -22,5 +22,9 @@
 
 @media (max-width: 768px){
 
+    .Wrapper{
+        height: 88vh;
+        background-size: fill;
+    }
     
 }

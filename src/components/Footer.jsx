@@ -117,6 +117,8 @@ const Footer = () => {
                     <li><a href="">Legal Notice</a></li>
                     <li><a href="">Cookies</a></li>
                     <li><a href="">Privacy Statement</a></li>
+                </ul>
+                <ul className="Social__bottom__links__list">
                     <li><a href="https://www.mercedes-benz.com/en/newsfeed/">Newsfeed (RSS)</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="https://info.daimler.com/en/">Careers</a></li>

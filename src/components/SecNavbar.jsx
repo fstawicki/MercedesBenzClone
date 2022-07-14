@@ -3,28 +3,28 @@ import React from 'react'
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import './SecNavbar.css';
 
-const SecNavbar = () => {
+const SecNavbar = (props) => {
   return (
-    <div name="sec" className='SecNavbar'>
+    <div name="sec" className={props.stickyClass}>
       <div className='SecNavbar__container'>
         <ul className='SecNavbar__container__ul'>
             <li>
-              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>A-Class Saloon</a>
+              <a href='#'>A-Class Saloon</a>
             </li>
             <li>
-              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Exterior</a>
+              <a href='#'>Exterior</a>
             </li>
             <li>
-              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Interior</a>
+              <a href='#'>Interior</a>
             </li>
             <li>
-              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Technology</a>
+              <a href='#'>Technology</a>
             </li>
             <li>
-              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Safety</a>
+              <a href='#'>Safety</a>
             </li>
             <li>
-              <a href='#' activeclass="active" to="test1" spy='true' smooth='true' offset={50} duration={500}>Mercedes-Benz in your country</a>
+              <a href='#'>Mercedes-Benz in your country</a>
             </li>
           </ul>
       </div>
