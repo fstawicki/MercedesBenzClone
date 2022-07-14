@@ -9,7 +9,7 @@ const SecNavbar = (props) => {
       <div className='SecNavbar__container'>
         <ul className='SecNavbar__container__ul'>
             <li>
-              <a href='#'>A-Class Saloon</a>
+              <a>A-Class Saloon</a>
             </li>
             <li>
               <a href='#'>Exterior</a>

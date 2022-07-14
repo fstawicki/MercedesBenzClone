@@ -58,12 +58,12 @@ const Navbar = () => {
             <div className="navbar__right__lower">
                 <ul className='navbar__right__lower__list'>
                     <li className='big-screen'><a href="#">Vehicles</a></li>
-                    <li className='big-screen'><a href="#">Design</a></li>
-                    <li className='big-screen'><a href="#">Innovation</a></li>
-                    <li className='big-screen'><a href="#">Museum & History</a></li>
-                    <li className='big-screen'><a href="#">Sports</a></li>
-                    <li className='big-screen'><a href="#">Events</a></li>             
-                    <li className='big-screen'><a href="#">Lifestyle</a></li>             
+                    <li className='big-screen'><a href="https://www.mercedes-benz.com/en/design/sensual-purity/">Design</a></li>
+                    <li className='big-screen'><a href="https://www.mercedes-benz.com/en/next/">Innovation</a></li>
+                    <li className='big-screen'><a href="https://www.mercedes-benz.com/en/classic/">Museum & History</a></li>
+                    <li className='big-screen'><a href="https://www.mercedes-benz.com/en/sports/">Sports</a></li>
+                    <li className='big-screen'><a href="https://www.mercedes-benz.com/en/events/">Events</a></li>             
+                    <li className='big-screen'><a href="https://www.mercedes-benz.com/en/lifestyle/">Lifestyle</a></li>             
                     <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/></a></li>
                     <li className='media'><a href="#" onClick={viewMenu}><FontAwesomeIcon icon={faBars}/></a></li>
                 </ul>
