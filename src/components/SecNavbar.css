@@ -63,7 +63,7 @@
     left: 0;
 
     background-color: #5d5a53;
-    transition: background-color .2s ease;
+    transition: .2s ease;
 }
 
 .stickNavbar .SecNavbar__container__ul li{

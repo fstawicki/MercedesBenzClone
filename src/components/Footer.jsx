@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import './Footer.css';
 
@@ -10,6 +11,11 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        scroll.scrollToTop(); 
+    };
+
   return (
     <div className='Footer'>
         <section className='Links'>
@@ -124,7 +130,7 @@ const Footer = () => {
                     <li><a href="https://info.daimler.com/en/">Careers</a></li>
                     <li><a href="https://group.mercedes-benz.com/investors/?r=dai">Investor Relations</a></li>
                 </ul>
-                <a href="#" className="Social__bottom__navigation">Top <FontAwesomeIcon icon={faChevronUp} /></a>
+                <a href="#" onClick={scrollToTop} className="Social__bottom__navigation">Top <FontAwesomeIcon icon={faChevronUp} /></a>
             </div>
         </div>
       </div>

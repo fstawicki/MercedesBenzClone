@@ -1,4 +1,7 @@
 import React from 'react'
+
+import { Link, animateScroll as scroll } from "react-scroll";
+
 // import * as Scroll from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import './SecNavbar.css';
@@ -24,7 +27,10 @@ const SecNavbar = (props) => {
               <a href='#'>Safety</a>
             </li>
             <li>
-              <a href='#'>Mercedes-Benz in your country</a>
+              <a href="">
+            Mercedes-Benz in your country
+
+              </a>
             </li>
           </ul>
       </div>
