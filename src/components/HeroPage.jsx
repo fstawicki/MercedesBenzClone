@@ -5,7 +5,7 @@ const HeroPage = (props) => {
   return (
     <div className='HeroPage'>
       <div className='HeroPage__overlay'>
-        <div className='HeroPage__overlay__upperText'>
+        <div className='HeroPage__overlay__upperText' id='AClassSaloon'>
           <h1 className='HeroPage__overlay__upperText__h1'>A-Class Saloon.</h1>
           <p className='HeroPage__overlay__upperText__p'>Compact entry into the world of premium saloon cars.</p>
           </div>

@@ -50,9 +50,9 @@ const galleryData = [
 
 const Gallery = () => {
   return (
-    <div className='Gallery'>
+    <div className='Gallery' id='MercedesBenzInYourCountry'>
         <div className="Gallery__title">
-            <h2 id='MercedesBenzInYourCountry' className="Gallery__title__h2">Mercedes-Benz in your country.</h2>
+            <h2 className="Gallery__title__h2">Mercedes-Benz in your country.</h2>
         </div>
         <ul className="Gallery__wrapper">
             {

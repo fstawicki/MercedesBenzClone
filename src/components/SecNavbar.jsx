@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 // import * as Scroll from 'react-scroll';
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -12,25 +12,76 @@ const SecNavbar = (props) => {
       <div className='SecNavbar__container'>
         <ul className='SecNavbar__container__ul'>
             <li>
-              <a>A-Class Saloon</a>
+            <Link
+              activeClass="active"
+              to="AClassSaloon"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              A-Class Saloon
+            </Link>
             </li>
             <li>
-              <a href='#'>Exterior</a>
+            <Link
+              activeClass="active"
+              to="Exterior."
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >            
+              Exterior
+            </Link>
             </li>
             <li>
-              <a href='#'>Interior</a>
+            <Link
+              activeClass="active"
+              to="Interior."
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Interior
+            </Link>
             </li>
             <li>
-              <a href='#'>Technology</a>
+            <Link
+              activeClass="active"
+              to="Technology."
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Technology
+            </Link>
             </li>
             <li>
-              <a href='#'>Safety</a>
+            <Link
+              activeClass="active"
+              to="Safety."
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Safety
+            </Link>
             </li>
             <li>
-              <a href="">
-            Mercedes-Benz in your country
-
-              </a>
+            <Link
+              activeClass="active"
+              to="MercedesBenzInYourCountry"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Mercedes-Benz in your country
+            </Link>
             </li>
           </ul>
       </div>

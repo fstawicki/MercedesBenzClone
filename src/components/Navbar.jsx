@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <Fragment>
-    <nav className='nav'>
+    <nav className='nav' id='AClassSaloon'>
         <div className="navbar">
         <a href='#' className="navbar__left">
             <div className="navbar__left__logo">

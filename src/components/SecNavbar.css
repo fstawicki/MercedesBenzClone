@@ -71,9 +71,12 @@
 }
 .stickNavbar .SecNavbar__container__ul li a{
     
-    border-bottom: 1px solid white;
+    
 }
 
+.stickNavbar .active{
+    border-bottom: 1px solid white;
+}
 
 
 
