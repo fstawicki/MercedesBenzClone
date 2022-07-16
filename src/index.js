@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import './fonts/mbcorpoatitle-regular.otf';
+import './assets/fonts/mbcorpoatitle-regular.otf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

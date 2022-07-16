@@ -4,7 +4,7 @@ import './NavbarSmallMenu.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faInfoCircle, faBars } from "@fortawesome/free-solid-svg-icons";
 
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll} from 'body-scroll-lock';
 
 
 const Navbar = () => {
@@ -42,10 +42,10 @@ const Navbar = () => {
         <div className="navbar">
         <a href='#' className="navbar__left">
             <div className="navbar__left__logo">
-                <img className="navbar__left__logoIMG" src={require("../images/mercedesphotos/logo.png")} alt="mercedes_logo" />
+                <img className="navbar__left__logoIMG" src={require("../assets/images/logo.png")} alt="mercedes_logo" />
             </div>
             <div className="navbar__left__logoname">
-                <img className="navbar__left__logonameIMG" src={require("../images/napis.png")}  alt="s" />
+                <img className="navbar__left__logonameIMG" src={require("../assets/images/napis.png")}  alt="s" />
             </div>
         </a>
         <div className="navbar__right">

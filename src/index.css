@@ -19,6 +19,6 @@ html{
 @font-face {
   font-family: "MBCorpoATitle";
   src: local("MBCorpoATitle"),
-   url("./fonts/mbcorpoatitle-regular.otf") format("opentype");
+   url("./assets/fonts/mbcorpoatitle-regular.otf") format("opentype");
   font-weight: regular;
 }
