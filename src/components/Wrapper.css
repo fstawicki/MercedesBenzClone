@@ -25,6 +25,7 @@
     .Wrapper{
         height: 88vh;
         background-size: fill;
+        background-image: url('../assets/images/wrapper_small.jpg');
     }
     
 }
