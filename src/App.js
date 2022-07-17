@@ -33,7 +33,7 @@ function App() {
       setStickNavbar(false);
     }
 
-  })
+  },[inView])
 
   let newClasses = 'SecNavbar';
 

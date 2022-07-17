@@ -71,7 +71,6 @@
 }
 .stickNavbar .SecNavbar__container__ul li a{
     
-    
 }
 
 .stickNavbar .active{
@@ -84,19 +83,74 @@
 @media (max-width: 1350px){
     
 
+    /* STICKY NAVBAR */
+.stickNavbar{
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #5d5a53;
+    transition: .2s ease;
+}
+
+.stickNavbar .SecNavbar__container__ul li{
+    height: 100%;
+}
+.stickNavbar .SecNavbar__container__ul li a{
+    
+}
+
+.stickNavbar .active{
+    border-bottom: 1px solid white;
 }
 
 
-@media (max-width: 1080px){
+}
+
+
+@media (max-width: 1165px){
     
     .SecNavbar__container{
         display: none;
     }
 
+    /* STICKY NAVBAR */
+.stickNavbar{
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #5d5a53;
+    transition: .2s ease;
+}
+
+.stickNavbar .SecNavbar__container{
+    display: block;
+}
+
+.SecNavbar__container{
+    
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.stickNavbar .SecNavbar__container__ul li{
+    height: 100%;
+}
+.stickNavbar .SecNavbar__container__ul li a{
+    padding: 0 0.5rem;
+}
+
+.stickNavbar .active{
+    border-bottom: 1px solid white;
+}
+
 
 }
 
-@media (max-width: 768px){
 
-    
+@media (max-width: 810px){
+
 }

@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment } from 'react'
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
@@ -13,31 +13,6 @@ import { Pagination } from "swiper";
 
 const Carrousel = (props) => {
 
-
-  const [winwidth, setwinwidth] = useState(false);
-
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, []);
-
-
-  function getWindowSize() {
-    const {innerWidth} = window;
-    return {innerWidth};
-  }
-
-  
-  // If we need pagination
   const pagination = {
 			clickable: true,
       renderBullet: function (index, className) {

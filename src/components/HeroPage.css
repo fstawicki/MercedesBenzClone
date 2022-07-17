@@ -1,23 +1,18 @@
 .HeroPage{
-    
     height: 77vh;
     width: 100%;
-
+    
 }
 
 
 .HeroPage__overlay{
     margin: 0 auto;
-    /* 
-    WAŻNE
-    */
     padding: 2.5rem 2.5rem 0 2.5rem;
     width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     
 }
 
