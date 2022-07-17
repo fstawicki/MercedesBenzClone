@@ -1,7 +1,8 @@
 .ImageHeadline{
     background-color: #1a1a1a;
     color: white;
-
+    display: block;
+    text-decoration: none;
     transition: 1s ease;
 
 }

@@ -40,7 +40,7 @@ const Navbar = () => {
     <Fragment>
     <nav className='nav' id='AClassSaloon'>
         <div className="navbar">
-        <a href='#' className="navbar__left">
+        <a href='https://www.mercedes-benz.com/en/' className="navbar__left">
             <div className="navbar__left__logo">
                 <img className="navbar__left__logoIMG" src={require("../assets/images/logo.png")} alt="mercedes_logo" />
             </div>
@@ -75,12 +75,12 @@ const Navbar = () => {
             <div className="navbar__smallMenu">
                 <ul className="navbar__smallMenu__ul">
                     <li className="navbar__smallMenu__ul__li"><a href="#">Vehicles</a></li>
-                    <li className="navbar__smallMenu__ul__li"><a href="#">Design</a></li>
-                    <li className="navbar__smallMenu__ul__li"><a href="#">Innovation</a></li>
-                    <li className="navbar__smallMenu__ul__li"><a href="#">Museum & History</a></li>
-                    <li className="navbar__smallMenu__ul__li"><a href="#">Sports</a></li>
-                    <li className="navbar__smallMenu__ul__li"><a href="#">Events</a></li>
-                    <li className="navbar__smallMenu__ul__li"><a href="#">Lifestyle</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="https://www.mercedes-benz.com/en/design/sensual-purity/">Design</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="https://www.mercedes-benz.com/en/next/">Innovation</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="https://www.mercedes-benz.com/en/classic/">Museum & History</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="https://www.mercedes-benz.com/en/sports/">Sports</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="https://www.mercedes-benz.com/en/events/">Events</a></li>
+                    <li className="navbar__smallMenu__ul__li"><a href="https://www.mercedes-benz.com/en/lifestyle/">Lifestyle</a></li>
                     <li className="navbar__smallMenu__ul__li"><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/> Search</a></li>
                 </ul>
             </div>

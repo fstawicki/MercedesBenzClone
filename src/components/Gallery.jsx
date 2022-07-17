@@ -17,6 +17,7 @@ const Gallery = () => {
                     return (
                         <GalleryCard
                             key={card.title}
+                            link={card.link}
                             image={card.imageURL} 
                             title={card.title} 
                             paragraph1={card.paragraph1} 

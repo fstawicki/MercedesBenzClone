@@ -28,7 +28,7 @@ const SecNavbar = (props) => {
               smooth={true}
               offset={-70}
               duration={500}
-            >            
+            >
               Exterior
             </Link>
             </li>

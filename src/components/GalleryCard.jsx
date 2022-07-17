@@ -8,7 +8,7 @@ const GalleryCard = (props) => {
   let cardStyle = {backgroundImage: `url(${props.image})`};
 
   return (
-    <a href='#' className="Gallery__wrapper__card">
+    <a href={props.link} className="Gallery__wrapper__card">
         <div className="Gallery__wrapper__card__image" style={cardStyle}></div>
         <div className="Gallery__wrapper__card__textdiv">
             <p className="Gallery__wrapper__card__textdiv__title">

@@ -7,12 +7,8 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const ImageHeadline = (props) => {
 
-  
-
-  let imagedivStyle = {backgroundImage: `url(${props.imgheadlineData.imageURL})`};
-
   return (
-    <div className='ImageHeadline'>
+    <a href={props.imgheadlineData.link} className='ImageHeadline'>
       <div className="ImageHeadline__container">
         <div className='ImageHeadline__container__imagediv'>
           <img src={props.imgheadlineData.imageURL} alt="" />
@@ -25,7 +21,7 @@ const ImageHeadline = (props) => {
           <FontAwesomeIcon className='ImageHeadline__container__arrowdiv__arrow' icon={faAngleRight} />
         </div>
       </div>
-    </div>
+    </a>
   )
 }
 
