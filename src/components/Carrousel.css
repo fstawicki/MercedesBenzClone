@@ -31,7 +31,6 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    /* border-bottom: 1px solid rgb(94, 94, 94); */
 }
 
 .SwiperSlide__text{
@@ -289,7 +288,6 @@
         letter-spacing: 0.5px;
     }
 
-    /* PAGINACJA DONE :D */
     .swiper-pagination{
         width: 100vw;
         display: flex;

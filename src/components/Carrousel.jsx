@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
@@ -42,21 +42,17 @@ const Carrousel = (props) => {
 
 
   return (
-    <Fragment>
-
     <div className='Carrousel'>
-    <Swiper 
-      loop={true} 
-      id='main'
-      pagination={pagination}
-      modules={[Pagination]}
-      className="mySwiper"
+      <Swiper 
+        loop={true} 
+        id='main'
+        pagination={pagination}
+        modules={[Pagination]}
+        className="mySwiper"
       >
-      {slides}
-
-    </Swiper>
-      </div>
-    </Fragment>
+        {slides}
+      </Swiper>
+    </div>
   )
 }
 

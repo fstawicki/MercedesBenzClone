@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react';
 import {useInView} from 'react-intersection-observer';
 
-import './App.css';
 import HeroPage from './components/HeroPage';
 import Navbar from './components/Navbar';
 import SecNavbar from './components/SecNavbar';

@@ -23,10 +23,6 @@
 }
 
 .ImageHeadline__container__imagediv{
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; */
-
     min-width: 20%;
     height: 20vh;
 
@@ -83,10 +79,6 @@
 
 @media (max-width: 1070px){
 
-    /* .ImageHeadline__container{
-        padding: 3rem 0 3rem 3rem;
-        padding-right: auto;
-    } */
 }
 
 @media (max-width: 810px){

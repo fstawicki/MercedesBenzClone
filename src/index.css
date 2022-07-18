@@ -5,6 +5,10 @@
   word-break: keep-all;
 }
 
+body{
+  background-color: black;
+}
+
 html{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
