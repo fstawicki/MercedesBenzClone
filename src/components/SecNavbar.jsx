@@ -1,89 +1,67 @@
-import React from 'react'
-
-import { Link } from "react-scroll";
+import React, {useState} from 'react'
 import './SecNavbar.css';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown, faChevronUp} from "@fortawesome/free-solid-svg-icons";
+
+import SecNavLinks from './SecNavLinks.jsx';
+
+
 const SecNavbar = (props) => {
+
+
+  const [openHamburger, setOpenHamburger] = useState(false);
+
+
+  const showHamburgerMenu = () =>{
+    setOpenHamburger(!openHamburger);
+  }
+
+  const closeHamburgerMenu = () => {
+    setOpenHamburger(false);
+  }
+
   return (
+    <div>
     <div name="sec" className={props.stickyClass}>
       <div className='SecNavbar__container'>
-        <ul className='SecNavbar__container__ul'>
-            <li>
-            <Link
-              activeClass="active"
-              to="AClassSaloon"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              A-Class Saloon
-            </Link>
-            </li>
-            <li>
-            <Link
-              activeClass="active"
-              to="Exterior."
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Exterior
-            </Link>
-            </li>
-            <li>
-            <Link
-              activeClass="active"
-              to="Interior."
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Interior
-            </Link>
-            </li>
-            <li>
-            <Link
-              activeClass="active"
-              to="Technology."
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Technology
-            </Link>
-            </li>
-            <li>
-            <Link
-              activeClass="active"
-              to="Safety."
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Safety
-            </Link>
-            </li>
-            <li>
-            <Link
-              activeClass="active"
-              to="MercedesBenzInYourCountry"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Mercedes-Benz in your country
-            </Link>
-            </li>
-          </ul>
+      <SecNavLinks linksClass='SecNavbar__container__ul' />
       </div>
     </div>
+    {props.stickyClass.includes('stickNavbar') &&
+    <div className='MobileSecNavbar'>
+      <FontAwesomeIcon
+        className='hamburgerMenuIcon'
+        icon={faChevronDown}
+        onClick={showHamburgerMenu}
+      />
+      
+    {openHamburger ? <SecNavLinks isMobile={true} closeHamburgerMenu={closeHamburgerMenu} linksClass='MobileSecNavbar__container__ul' /> : ''}
+      
+    </div>
+    }
+</div>
+
   )
 }
 
-export default SecNavbar
+export default SecNavbar;
+
+// import React from 'react'
+
+// import SecNavLinks from './SecNavLinks';
+// import { Link } from "react-scroll";
+// import './SecNavbar.css';
+
+// const SecNavbar = (props) => {
+//   return (
+//     <div name="sec" className={props.stickyClass}>
+//       <div className='SecNavbar__container'>
+//         <ul className='SecNavbar__container__ul'>
+           
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default SecNavbar
