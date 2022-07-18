@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-import './SecNavbar.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp} from "@fortawesome/free-solid-svg-icons";
 
 import SecNavLinks from './SecNavLinks.jsx';
 
+import './SecNavbar.css';
 
 const SecNavbar = (props) => {
 
@@ -22,46 +22,42 @@ const SecNavbar = (props) => {
   }
 
   return (
+
     <div>
-    <div name="sec" className={props.stickyClass}>
-      <div className='SecNavbar__container'>
-      <SecNavLinks linksClass='SecNavbar__container__ul' />
+      <div name="sec" className={props.stickyClass}>
+        <div className='SecNavbar__container'>
+          <SecNavLinks linksClass='SecNavbar__container__ul' />
+        </div>
       </div>
-    </div>
-    {props.stickyClass.includes('stickNavbar') &&
-    <div className='MobileSecNavbar'>
-      <FontAwesomeIcon
-        className='hamburgerMenuIcon'
-        icon={faChevronDown}
-        onClick={showHamburgerMenu}
-      />
+      {props.stickyClass.includes('stickNavbar') &&
+        <div className='MobileSecNavbar'>
+          {openHamburger ? 
+            <FontAwesomeIcon
+              className='hamburgerMenuIcon'
+              icon={faChevronDown}
+              onClick={showHamburgerMenu}
+            /> : 
+            <FontAwesomeIcon
+              className='hamburgerMenuIcon'
+              icon={faChevronUp}
+              onClick={showHamburgerMenu}
+            />
+          }
+      {openHamburger ? 
+        <SecNavLinks 
+          isMobile={true} 
+          closeHamburgerMenu={closeHamburgerMenu} 
+          linksClass='MobileSecNavbar__container__ul' 
+        /> : ''
+      }
       
-    {openHamburger ? <SecNavLinks isMobile={true} closeHamburgerMenu={closeHamburgerMenu} linksClass='MobileSecNavbar__container__ul' /> : ''}
+      </div>
       
-    </div>
-    }
+      }
+
 </div>
 
   )
 }
 
 export default SecNavbar;
-
-// import React from 'react'
-
-// import SecNavLinks from './SecNavLinks';
-// import { Link } from "react-scroll";
-// import './SecNavbar.css';
-
-// const SecNavbar = (props) => {
-//   return (
-//     <div name="sec" className={props.stickyClass}>
-//       <div className='SecNavbar__container'>
-//         <ul className='SecNavbar__container__ul'>
-           
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default SecNavbar
