@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react';
-
 import {useInView} from 'react-intersection-observer';
 
 import './App.css';
@@ -24,6 +23,7 @@ function App() {
 
   const {ref, inView } = useInView();
   const [stickNavbar, setStickNavbar] = useState();
+ 
 
   useEffect(() => {
 
@@ -52,7 +52,6 @@ function App() {
           </div>
           <SecNavbar stickyClass={newClasses} />
         </Wrapper>
-        
         <Headline title={HeadlineData.exterior.headlineTitle} paragraph={HeadlineData.exterior.headlineParagraph} />
         <Carrousel slidesData={Carrousel1} slidesNumber={3} />
         <ImageHeadline imgheadlineData={ImageHeadlineData.design} />

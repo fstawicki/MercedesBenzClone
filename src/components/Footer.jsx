@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+import { animateScroll as scroll } from "react-scroll";
 
 import './Footer.css';
 
@@ -12,12 +14,21 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
 
+    const [footerRef, footerInView] = useInView();
+    const [footerRef2, footerInView2] = useInView();
+    const [footerRef3, footerInView3] = useInView();
+
     const scrollToTop = () => {
         scroll.scrollToTop(); 
     };
 
   return (
     <div className='Footer'>
+        <motion.div 
+          ref={footerRef} 
+          animate={{ y: footerInView ? 0 : 40, opacity: footerInView ? 1 : 0, animationDelay: 2}} 
+          transition={{ duration: 0.7 }}
+        >
         <section className='Links'>
         <div className="Links__column">
             <div className="Links__column__headline">
@@ -93,8 +104,14 @@ const Footer = () => {
             </div>
         </div>
     </section>
+    </motion.div>
 
     <section className="Social">
+    <motion.div 
+          ref={footerRef2} 
+          animate={{ y: footerInView2 ? 0 : 40, opacity: footerInView2 ? 1 : 0, animationDelay: 2}} 
+          transition={{ duration: 0.7 }}
+    >
       <div className="Social__title">
         <h2>Stay Informed</h2>
       </div>
@@ -108,8 +125,14 @@ const Footer = () => {
           <li><a href="https://www.linkedin.com/company/mercedes-benz_ag/"><FaLinkedin className='socialIcon' /></a></li>
         </ul>
       </div>
+    </motion.div>
       <div className="Social__spacer"></div>
       <div className="Social__bottom">
+    <motion.div 
+          ref={footerRef3} 
+          animate={{ y: footerInView3 ? 0 : 40, opacity: footerInView3 ? 1 : 0, animationDelay: 2}} 
+          transition={{ duration: 0.7 }}
+    >
         <div className="Social__bottom__paragraph">
           <p>This is the International website of Mercedes-Benz AG. Visitors from the U.S., please visit our U.S. website <a href="https://www.mbusa.com/en/home">www.mbusa.com</a>.</p>
         </div>
@@ -133,14 +156,10 @@ const Footer = () => {
                 <a href="#" onClick={scrollToTop} className="Social__bottom__navigation">Top <FontAwesomeIcon icon={faChevronUp} /></a>
             </div>
         </div>
+        </motion.div>
       </div>
 
     </section>
-
-
-
-
-
     </div>
   )
 }
