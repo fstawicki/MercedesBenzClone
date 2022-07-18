@@ -11,9 +11,9 @@ https://www.mercedes-benz.com/en/vehicles/passenger-cars/a-class/saloon/
 
 In project I used third party libraries such as:
 
-:point_right: body-scroll-lock
-:point_right: framer-motion
-:point_right: react-icons
-:point_right: react-intersection-observer
-:point_right: react-scroll
-:point_right: swiper
+:point_right: body-scroll-lock <br/>
+:point_right: framer-motion <br/>
+:point_right: react-icons <br/>
+:point_right: react-intersection-observer <br/>
+:point_right: react-scroll <br/>
+:point_right: swiper <br/>
