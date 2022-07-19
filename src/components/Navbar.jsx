@@ -64,7 +64,7 @@ const Navbar = () => {
                     <li className='big-screen'><a href="https://www.mercedes-benz.com/en/sports/">Sports</a></li>
                     <li className='big-screen'><a href="https://www.mercedes-benz.com/en/events/">Events</a></li>             
                     <li className='big-screen'><a href="https://www.mercedes-benz.com/en/lifestyle/">Lifestyle</a></li>             
-                    <li ><a href="#"><FontAwesomeIcon icon={faMagnifyingGlass}/></a></li>
+                    <li ><a href="#" className='navbar_style_icon' ><FontAwesomeIcon icon={faMagnifyingGlass}/></a></li>
                     <li className='media'><a href="#" onClick={viewMenu}><FontAwesomeIcon icon={faBars}/></a></li>
                 </ul>
             </div>

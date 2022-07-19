@@ -141,3 +141,26 @@
     }
     
 }
+
+@media(max-width: 400px){
+
+    .navbar__left{
+        margin-left: 0;
+    }
+
+    .navbar__left__logo img{
+        width: 45px;
+        height: 45px;
+    }
+    
+    .navbar__left__logoname img{
+        height: 20px;
+        width: 100px;
+    }
+
+    .navbar__right__upper__list,
+    .navbar_style_icon,
+    .media{
+        font-size: 0.9rem;
+    }
+}

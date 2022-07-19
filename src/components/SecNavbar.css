@@ -56,7 +56,7 @@
     z-index: 200;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
 
     background-color: #5d5a53;
     transition: .2s ease;
@@ -84,7 +84,7 @@
     z-index: 200;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
 
     background-color: #5d5a53;
     transition: .2s ease;
@@ -116,7 +116,7 @@
     z-index: 200;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
 
     background-color: #5d5a53;
     transition: .2s ease;
@@ -161,7 +161,7 @@
         z-index: 200;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         height: 8vh;
         width: 100%;
       
@@ -169,7 +169,7 @@
         transition: 0.2s ease;
       
         display: flex;
-        justify-content: end;
+        justify-content: right;
         align-items: center;
       }
       
